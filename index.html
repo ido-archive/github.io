@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>Archive Index</title>
+    <style>
+        .indexTable {margin: 0 auto;width: 100%;max-width: 1200px;border-collapse: collapse;border: 1px solid #ddd;}
+        .indexTable__wrap {}
+        .indexTable__tr {border-bottom: 1px solid #ddd;}
+        .indexTable__th {background: #f5f5f5;}
+        .indexTable__th,
+        .indexTable__td {padding: 12px 10px;border-left: 1px solid #ddd;}
+    </style>
+</head>
+<body>
+<div class="indexTable__wrap">
+    <table class="indexTable">
+        <caption>General Index</caption>
+        <colgroup>
+            <col>
+        </colgroup>
+        <thead>
+        <tr class="indexTable__tr">
+            <th class="indexTable__th"></th>
+            <th class="indexTable__th" scope="col">Main</th>
+            <th class="indexTable__th" scope="col">depth 1</th>
+            <th class="indexTable__th" scope="col">depth 2</th>
+            <th class="indexTable__th" scope="col">depth 3</th>
+            <th class="indexTable__th" scope="col">note</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr class="indexTable__tr">
+            <th class="indexTable__th" scope="rowgroup" rowspan="4">svc1</th>
+        </tr>
+        <tr class="indexTable__tr">
+            <td class="indexTable__td" rowspan="3">main</td>
+            <td class="indexTable__td">sub1</td>
+            <td class="indexTable__td">sub1-2</td>
+        </tr>
+        <tr class="indexTable__tr">
+            <td class="indexTable__td">sub2</td>
+        </tr>
+        <tr class="indexTable__tr">
+            <td class="indexTable__td">sub3</td>
+        </tr>
+        <tr class="indexTable__tr">
+            <th class="indexTable__th" scope="row">svc2</th>
+        </tr>
+        <tr class="indexTable__tr">
+            <th class="indexTable__th" scope="row">svc3</th>
+        </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>
