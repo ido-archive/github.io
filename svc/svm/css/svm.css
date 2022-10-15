@@ -130,7 +130,7 @@ img{max-width:100%;height:auto}
 .svm .objectItem--largest .objectItem__vote{color:#323232}
 .svm .objectItem--largest .objectItem__rate{font-weight:900;color:#323232}
 .svm .objectItem--selected .objectItem__label{padding-left:20px;font-weight:900}
-.svm .objectItem--selected .objectItem__label::before{content:'';position:absolute;top:1px;left:0;width:16px;height:16px;background:url(../img/svm/sp_svm.png) -76px -34px no-repeat;background-size:250px 250px}
+.svm .objectItem--selected .objectItem__label::before{content:'';position:absolute;top:1px;left:0;width:16px;height:16px;background:url(/svc/svm/img/sp_svm.png) -76px -34px no-repeat;background-size:250px 250px}
 .svm .primaryBox{gap:4px}
 .svm .primaryBtn{-webkit-box-flex:1;-ms-flex:1;flex:1;padding:0 24px;height:48px;border:1px solid #ededed;background:#fff;border-radius:24px;font-size:14px;font-weight:700;letter-spacing:-.21px;color:#686868}
 .svm .primaryBtn--blue{border-color:#127eff;background-color:#127eff;color:#fff}
@@ -158,15 +158,15 @@ img{max-width:100%;height:auto}
 .svm .inputTextBox__submit{-ms-flex-negative:0;flex-shrink:0;width:28px;height:28px;background:#dbdfe3;border-radius:50%}
 .svm .inputTextBox__submit--active{background-image:-o-linear-gradient(314deg,#5aa0ff 27%,#766fff);background-image:linear-gradient(136deg,#5aa0ff 27%,#766fff)}
 .svm .inputTextBox__btnDel{position:absolute;top:5px;right:0;width:30px;height:30px}
-.svm .inputTextBox__btnDel::before{content:'';position:absolute;top:50%;left:50%;margin-top:-8px;margin-left:-8px;width:16px;height:16px;background:url(../img/svm/sp_svm.png) -96px -34px no-repeat;background-size:250px 250px}
+.svm .inputTextBox__btnDel::before{content:'';position:absolute;top:50%;left:50%;margin-top:-8px;margin-left:-8px;width:16px;height:16px;background:url(/svc/svm/img/sp_svm.png) -96px -34px no-repeat;background-size:250px 250px}
 .svm .inputTextBox__btnDel+.inputTextBox__input{padding-right:40px}
 .svm .checkItem{display:block;position:relative}
 .svm .checkItem__input{position:absolute;top:0;left:0;width:1px;height:1px;opacity:.001;color:transparent}
 .svm .checkItem__input:checked~.checkItem__label{border-color:#127eff;background-color:#f5faff;-webkit-box-shadow:0 4px 8px 0 rgba(0,0,0,.1);box-shadow:0 4px 8px 0 rgba(0,0,0,.1);color:#127eff}
-.svm .checkItem__input:checked~.checkItem__label .checkItem__num::before{content:'';position:absolute;top:50%;left:50%;margin-top:-10px;margin-left:-10px;width:20px;height:20px;background:url(../img/svm/sp_svm.png) -27px -34px no-repeat;background-size:250px 250px}
+.svm .checkItem__input:checked~.checkItem__label .checkItem__num::before{content:'';position:absolute;top:50%;left:50%;margin-top:-10px;margin-left:-10px;width:20px;height:20px;background:url(/svc/svm/img/sp_svm.png) -27px -34px no-repeat;background-size:250px 250px}
 .svm .checkItem__input:checked~.checkItem__answer{font-weight:900;color:#127eff}
 .svm .checkItem--selected .checkItem__label{border-color:#127eff;background-color:#f5faff;-webkit-box-shadow:0 4px 8px 0 rgba(0,0,0,.1);box-shadow:0 4px 8px 0 rgba(0,0,0,.1);color:#127eff}
-.svm .checkItem--selected .checkItem__label .checkItem__num::before{content:'';position:absolute;top:50%;left:50%;margin-top:-10px;margin-left:-10px;width:20px;height:20px;background:url(../img/svm/sp_svm.png) -27px -34px no-repeat;background-size:250px 250px}
+.svm .checkItem--selected .checkItem__label .checkItem__num::before{content:'';position:absolute;top:50%;left:50%;margin-top:-10px;margin-left:-10px;width:20px;height:20px;background:url(/svc/svm/img/sp_svm.png) -27px -34px no-repeat;background-size:250px 250px}
 .svm .checkItem--selected .checkItem__answer{font-weight:900;color:#127eff}
 .svm .checkItem__label{display:block;padding:16px 18px;min-height:58px;border:1px solid #e4e4e4;background:#fff;border-radius:12px;font-size:14px;letter-spacing:-.21px;line-height:23px;font-weight:900;color:#232323;word-break:break-all;overflow-wrap:break-word}
 .svm .checkItem__num{display:inline-block;position:relative;vertical-align:top;margin-top:1px;margin-right:8px;width:20px;height:20px;background:#f1f1f1;border-radius:50%;text-align:center;font-size:13px;line-height:22px;color:#a8a8a8}
@@ -179,7 +179,7 @@ img{max-width:100%;height:auto}
 .svm .objectiveBox--either .checkItem{-webkit-box-flex:1;-ms-flex:1;flex:1;margin:0!important;max-width:calc(50% - 8px)}
 .svm .objectiveBox--either .checkItem__label{position:relative;padding:36px 18px;height:100%;background-position:50% 50%;background-size:cover;background-repeat:no-repeat;font-size:16px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .svm .objectiveBox--either .checkItem__num{position:absolute;top:12px;left:12px;margin-top:0;width:20px;height:20px;background-color:transparent;color:transparent}
-.svm .objectiveBox--either .checkItem__num::before{content:'';position:absolute;top:50%;left:50%;margin-top:-10px;margin-left:-10px;width:20px;height:20px;background:url(../img/svm/sp_svm.png) -52px -34px no-repeat;background-size:250px 250px}
+.svm .objectiveBox--either .checkItem__num::before{content:'';position:absolute;top:50%;left:50%;margin-top:-10px;margin-left:-10px;width:20px;height:20px;background:url(/svc/svm/img/sp_svm.png) -52px -34px no-repeat;background-size:250px 250px}
 .svm .objectiveBox--either .inputTextBox{position:absolute;top:32px;left:12px;right:12px;bottom:10px;margin-left:0}
 .svm .objectiveBox--either .inputTextBox__input{border-bottom:0}
 .svm .objectiveBox--either .inputTextBox__count{position:absolute;bottom:0;right:0}
@@ -189,16 +189,16 @@ img{max-width:100%;height:auto}
 .svm .selectBox--active .selectBox__dropdown{display:block}
 .svm .selectBox--active .selectBox__btn::after{-webkit-transform:rotate(-180deg);-ms-transform:rotate(-180deg);transform:rotate(-180deg)}
 .svm .selectBox__anchor .selectBox__btn{padding:3px 50px 3px 20px;height:54px}
-.svm .selectBox__anchor .selectBox__btn::after{content:'';position:absolute;top:50%;right:24px;margin-top:-3px;width:10px;height:6px;background:url(../img/svm/sp_svm.png) -18px -15px no-repeat;background-size:250px 250px}
+.svm .selectBox__anchor .selectBox__btn::after{content:'';position:absolute;top:50%;right:24px;margin-top:-3px;width:10px;height:6px;background:url(/svc/svm/img/sp_svm.png) -18px -15px no-repeat;background-size:250px 250px}
 .svm .selectBox__btn{position:relative;padding:0 20px;width:100%;height:48px;outline:0;border:0;background:0 0;text-align:left;font-size:13px;letter-spacing:-.2px;color:#232323;overflow:hidden;white-space:nowrap;-o-text-overflow:ellipsis;text-overflow:ellipsis}
 .svm .selectBox__dropdown{display:none;border-bottom-left-radius:12px;border-bottom-right-radius:12px;overflow:hidden}
 .svm .selectBox__dropdownList{max-height:245px;overflow-y:auto}
 .svm .selectBox__dropdown .selectBox__btn--selected,.svm .selectBox__dropdown .selectBox__btn:hover{background-color:#f1f2f5}
 .svm .checkInput{display:inline-block;position:relative;vertical-align:top}
 .svm .checkInput__input{position:absolute;top:0;left:0;width:1px;height:1px;opacity:.001;color:transparent}
-.svm .checkInput__input:checked~.checkInput__icon{display:inline-block;vertical-align:top;width:20px;height:20px;background:url(../img/svm/sp_svm.png) -27px -34px no-repeat;background-size:250px 250px;line-height:100em;color:transparent;overflow:hidden}
-.svm .checkInput--selected .checkInput__icon{display:inline-block;vertical-align:top;width:20px;height:20px;background:url(../img/svm/sp_svm.png) -27px -34px no-repeat;background-size:250px 250px;line-height:100em;color:transparent;overflow:hidden}
-.svm .checkInput__icon{position:relative;display:inline-block;vertical-align:top;width:20px;height:20px;background:url(../img/svm/sp_svm.png) -52px -34px no-repeat;background-size:250px 250px;line-height:100em;color:transparent;overflow:hidden}
+.svm .checkInput__input:checked~.checkInput__icon{display:inline-block;vertical-align:top;width:20px;height:20px;background:url(/svc/svm/img/sp_svm.png) -27px -34px no-repeat;background-size:250px 250px;line-height:100em;color:transparent;overflow:hidden}
+.svm .checkInput--selected .checkInput__icon{display:inline-block;vertical-align:top;width:20px;height:20px;background:url(/svc/svm/img/sp_svm.png) -27px -34px no-repeat;background-size:250px 250px;line-height:100em;color:transparent;overflow:hidden}
+.svm .checkInput__icon{position:relative;display:inline-block;vertical-align:top;width:20px;height:20px;background:url(/svc/svm/img/sp_svm.png) -52px -34px no-repeat;background-size:250px 250px;line-height:100em;color:transparent;overflow:hidden}
 .svm .checkInput__label{vertical-align:top;margin-left:4px;font-size:13px;line-height:21px;color:#232323}
 .svm .checkInput__label--blind{overflow:hidden!important;position:absolute!important;z-index:-1;width:1px!important;height:1px!important;border:0;clip:rect(1px 1px 1px 1px)!important;-webkit-clip-path:inset(50%);clip-path:inset(50%)}
 .svm .ratingBox{padding:18px 24px;background:#f4f4f4;border-radius:10px;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;gap:9px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:normal;-ms-flex-pack:normal;justify-content:normal;-webkit-box-align:normal;-ms-flex-align:normal;align-items:normal}
@@ -217,7 +217,7 @@ img{max-width:100%;height:auto}
 .svm .validation{position:relative;margin-top:8px;padding-right:40px;font-size:12px;line-height:17px;letter-spacing:-.22px;color:#127eff}
 .svm .validation+.inputTextBox__count{position:absolute;bottom:-1px;right:0}
 .svm [class*="--error"] .validation,.svm [class*="--invalid"] .validation{padding-left:20px;color:#fc5356}
-.svm [class*="--error"] .validation::before,.svm [class*="--invalid"] .validation::before{content:'';position:absolute;top:0;left:0;width:16px;height:15px;background:url(../img/svm/sp_svm.png) -115px -34px no-repeat;background-size:250px 250px}
+.svm [class*="--error"] .validation::before,.svm [class*="--invalid"] .validation::before{content:'';position:absolute;top:0;left:0;width:16px;height:15px;background:url(/svc/svm/img/sp_svm.png) -115px -34px no-repeat;background-size:250px 250px}
 .svm [class*="--error"] [class*="__input"],.svm [class*="--invalid"] [class*="__input"]{border-bottom-color:#fc5356}
 .svm .title--h1{font-size:18px;font-weight:900;line-height:24px;letter-spacing:-.27px;color:#232323}
 .svm .surveyTitle{font-size:22px;font-weight:400;letter-spacing:-.33px;color:#232323}
@@ -232,35 +232,35 @@ img{max-width:100%;height:auto}
 .svm .label--dday{padding:0 6px;height:16px;border:1px solid #fc5356;background-color:#fff;font-size:9px;line-height:16px;letter-spacing:-.14px;color:#fc5356}
 .svm .icon{position:relative;display:inline-block;vertical-align:top;font-size:10px;color:transparent;overflow:hidden}
 .svm .icon--userss{width:18px;height:18px}
-.svm .icon--userss::before{content:'';position:absolute;top:50%;left:50%;margin-top:-6px;margin-left:-6px;width:12px;height:12px;background:url(../img/svm/sp_svm.png) 0 -18px no-repeat;background-size:250px 250px}
+.svm .icon--userss::before{content:'';position:absolute;top:50%;left:50%;margin-top:-6px;margin-left:-6px;width:12px;height:12px;background:url(/svc/svm/img/sp_svm.png) 0 -18px no-repeat;background-size:250px 250px}
 .svm .icon--replyss{width:18px;height:18px}
-.svm .icon--replyss::before{content:'';position:absolute;top:50%;left:50%;margin-top:-6.5px;margin-left:-6.5px;width:13px;height:13px;background:url(../img/svm/sp_svm.png) 0 0 no-repeat;background-size:250px 250px}
+.svm .icon--replyss::before{content:'';position:absolute;top:50%;left:50%;margin-top:-6.5px;margin-left:-6.5px;width:13px;height:13px;background:url(/svc/svm/img/sp_svm.png) 0 0 no-repeat;background-size:250px 250px}
 .svm .icon--checkin{width:16px;height:16px}
-.svm .icon--checkin::before{content:'';position:absolute;top:50%;left:50%;margin-top:-8px;margin-left:-8px;width:16px;height:16px;background:url(../img/svm/sp_svm.png) -76px -34px no-repeat;background-size:250px 250px}
+.svm .icon--checkin::before{content:'';position:absolute;top:50%;left:50%;margin-top:-8px;margin-left:-8px;width:16px;height:16px;background:url(/svc/svm/img/sp_svm.png) -76px -34px no-repeat;background-size:250px 250px}
 .svm .icon--arrow{width:18px;height:18px}
-.svm .icon--arrow::before{content:'';position:absolute;top:50%;left:50%;margin-top:-4px;margin-left:-7px;width:14px;height:8px;background:url(../img/svm/sp_svm.png) -137px -18px no-repeat;background-size:250px 250px}
+.svm .icon--arrow::before{content:'';position:absolute;top:50%;left:50%;margin-top:-4px;margin-left:-7px;width:14px;height:8px;background:url(/svc/svm/img/sp_svm.png) -137px -18px no-repeat;background-size:250px 250px}
 .svm .icon--arrowss{width:12px;height:12px}
-.svm .icon--arrowss::before{content:'';position:absolute;top:50%;left:50%;margin-top:-4px;margin-left:-2.5px;width:5px;height:8px;background:url(../img/svm/sp_svm.png) -128px -14px no-repeat;background-size:250px 250px}
+.svm .icon--arrowss::before{content:'';position:absolute;top:50%;left:50%;margin-top:-4px;margin-left:-2.5px;width:5px;height:8px;background:url(/svc/svm/img/sp_svm.png) -128px -14px no-repeat;background-size:250px 250px}
 .svm .icon--close{width:24px;height:24px}
-.svm .icon--close::before{content:'';position:absolute;top:50%;left:50%;margin-top:-7px;margin-left:-7px;width:14px;height:14px;background:url(../img/svm/sp_svm.png) -178px 0 no-repeat;background-size:250px 250px}
+.svm .icon--close::before{content:'';position:absolute;top:50%;left:50%;margin-top:-7px;margin-left:-7px;width:14px;height:14px;background:url(/svc/svm/img/sp_svm.png) -178px 0 no-repeat;background-size:250px 250px}
 .svm .icon--user{width:24px;height:24px}
-.svm .icon--user::before{content:'';position:absolute;top:50%;left:50%;margin-top:-10.5px;margin-left:-10px;width:20px;height:21px;background:url(../img/svm/sp_svm.png) -84px 0 no-repeat;background-size:250px 250px}
+.svm .icon--user::before{content:'';position:absolute;top:50%;left:50%;margin-top:-10.5px;margin-left:-10px;width:20px;height:21px;background:url(/svc/svm/img/sp_svm.png) -84px 0 no-repeat;background-size:250px 250px}
 .svm .icon--share{width:24px;height:24px}
-.svm .icon--share::before{content:'';position:absolute;top:50%;left:50%;margin-top:-10.5px;margin-left:-9px;width:18px;height:21px;background:url(../img/svm/sp_svm.png) -61px 0 no-repeat;background-size:250px 250px}
+.svm .icon--share::before{content:'';position:absolute;top:50%;left:50%;margin-top:-10.5px;margin-left:-9px;width:18px;height:21px;background:url(/svc/svm/img/sp_svm.png) -61px 0 no-repeat;background-size:250px 250px}
 .svm .icon--back{width:24px;height:24px}
-.svm .icon--back::before{content:'';position:absolute;top:50%;left:50%;margin-top:-7px;margin-left:-9px;width:18px;height:14px;background:url(../img/svm/sp_svm.png) -197px 0 no-repeat;background-size:250px 250px}
+.svm .icon--back::before{content:'';position:absolute;top:50%;left:50%;margin-top:-7px;margin-left:-9px;width:18px;height:14px;background:url(/svc/svm/img/sp_svm.png) -197px 0 no-repeat;background-size:250px 250px}
 .svm .icon--doubleCheck{width:18px;height:18px}
-.svm .icon--doubleCheck::before{content:'';position:absolute;top:50%;left:50%;margin-top:-5px;margin-left:-7.5px;width:15px;height:10px;background:url(../img/svm/sp_svm.png) -18px 0 no-repeat;background-size:250px 250px}
+.svm .icon--doubleCheck::before{content:'';position:absolute;top:50%;left:50%;margin-top:-5px;margin-left:-7.5px;width:15px;height:10px;background:url(/svc/svm/img/sp_svm.png) -18px 0 no-repeat;background-size:250px 250px}
 .svm .icon--arrowLeft{width:18px;height:18px}
-.svm .icon--arrowLeft::before{content:'';position:absolute;top:50%;left:50%;margin-top:-4.5px;margin-left:-6px;width:12px;height:9px;background:url(../img/svm/sp_svm.png) -156px -18px no-repeat;background-size:250px 250px}
+.svm .icon--arrowLeft::before{content:'';position:absolute;top:50%;left:50%;margin-top:-4.5px;margin-left:-6px;width:12px;height:9px;background:url(/svc/svm/img/sp_svm.png) -156px -18px no-repeat;background-size:250px 250px}
 .svm .icon--arrowRight{width:18px;height:18px}
-.svm .icon--arrowRight::before{content:'';position:absolute;top:50%;left:50%;margin-top:-4.5px;margin-left:-6px;width:12px;height:9px;background:url(../img/svm/sp_svm.png) -171px -18px no-repeat;background-size:250px 250px}
+.svm .icon--arrowRight::before{content:'';position:absolute;top:50%;left:50%;margin-top:-4.5px;margin-left:-6px;width:12px;height:9px;background:url(/svc/svm/img/sp_svm.png) -171px -18px no-repeat;background-size:250px 250px}
 .svm .icon--arrowToggle{width:18px;height:18px}
-.svm .icon--arrowToggle::before{content:'';position:absolute;top:50%;left:50%;margin-top:-3px;margin-left:-5px;width:10px;height:6px;background:url(../img/svm/sp_svm.png) -18px -15px no-repeat;background-size:250px 250px}
+.svm .icon--arrowToggle::before{content:'';position:absolute;top:50%;left:50%;margin-top:-3px;margin-left:-5px;width:10px;height:6px;background:url(/svc/svm/img/sp_svm.png) -18px -15px no-repeat;background-size:250px 250px}
 .svm .icon--submit{width:24px;height:24px}
-.svm .icon--submit::before{content:'';position:absolute;top:50%;left:50%;margin-top:-9px;margin-left:-8px;width:16px;height:18px;background:url(../img/svm/sp_svm.png) -220px 0 no-repeat;background-size:250px 250px}
+.svm .icon--submit::before{content:'';position:absolute;top:50%;left:50%;margin-top:-9px;margin-left:-8px;width:16px;height:18px;background:url(/svc/svm/img/sp_svm.png) -220px 0 no-repeat;background-size:250px 250px}
 .svm .icon--arrowMove{width:18px;height:18px}
-.svm .icon--arrowMove::before{content:'';position:absolute;top:50%;left:50%;margin-top:-6.5px;margin-left:-3.5px;width:7px;height:13px;background:url(../img/svm/sp_svm.png) -189px -18px no-repeat;background-size:250px 250px}
+.svm .icon--arrowMove::before{content:'';position:absolute;top:50%;left:50%;margin-top:-6.5px;margin-left:-3.5px;width:7px;height:13px;background:url(/svc/svm/img/sp_svm.png) -189px -18px no-repeat;background-size:250px 250px}
 .svm .boardThumb{display:inline-block;position:relative;vertical-align:top;width:70px;height:48px;background:#f0f0f0;border-radius:8px;overflow:hidden}
 .svm .boardThumb__img{position:absolute;top:0;left:0;width:100%;height:100%;background-position:50% 50%;background-size:cover;background-repeat:no-repeat;color:transparent}
 .svm .thumbGroup{display:inline-block;vertical-align:top}

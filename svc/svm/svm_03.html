@@ -7,8 +7,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-status-bar-style">
     <title>설문/투표</title>
-    <link rel="stylesheet" type="text/css" href="../../css/nanumsquare.css">
-    <link rel="stylesheet" type="text/css" href="../../css/svm.css">
+    <link rel="stylesheet" type="text/css" href="css/nanumsquare.css">
+    <link rel="stylesheet" type="text/css" href="css/svm.css">
 </head>
 <body>
 <div id="wrap">
@@ -29,39 +29,33 @@
                     <h1 class="surveyCount__title">기본사항</h1>
                 </div>
                 <div class="titleBox">
-                    <h2 class="surveyTitle"><strong class="surveyTitle--strong">거주지</strong>를 입력하세요.</h2>
+                    <h2 class="surveyTitle"><strong class="surveyTitle--strong">생산적인 업무를 위해 가장 필요한 것</strong>은 무엇인지 자유롭게 작성해주세요.</h2>
                     <p class="surveyTitle__desc">현재 거주하고 있는 지역을 입력하세요.</p>
                 </div>
                 <div class="contentBox">
                     <form action="">
-                        <!-- [D] 활성화 시 클래스 selectBox--active 추가 -->
-                        <div class="selectBox">
-                            <div class="selectBox__anchor">
-                                <button type="button" class="selectBox__btn">선택하세요</button>
+                        <!-- input 요소 사용할 경우 -->
+                        <div class="inputTextBox inputTextBox--error">
+                            <div class="inputTextBox__inputItem">
+                                <input type="text" class="inputTextBox__input" placeholder="내용을 입력하세요." value="">
                             </div>
-                            <div class="selectBox__dropdown">
-                                <ul class="selectBox__dropdownList">
-                                    <li>
-                                        <button type="button" class="selectBox__btn selectBox__btn--selected">강원도 춘천시</button>
-                                    </li>
-                                    <li>
-                                        <button type="button" class="selectBox__btn">강원도 춘천시</button>
-                                    </li>
-                                    <li>
-                                        <button type="button" class="selectBox__btn">강원도 춘천시</button>
-                                    </li>
-                                    <li>
-                                        <button type="button" class="selectBox__btn">강원도 춘천시</button>
-                                    </li>
-                                    <li>
-                                        <button type="button" class="selectBox__btn">강원도 춘천시</button>
-                                    </li>
-                                    <li>
-                                        <button type="button" class="selectBox__btn">강원도 춘천시</button>
-                                    </li>
-                                </ul>
-                            </div>
+                            <p class="validation">내용을 입력하세요.</p>
+                            <span class="inputTextBox__count inputTextBox__count--alignRight"><span class="empText">6</span>/20</span>
                         </div>
+                        <!-- //input 요소 사용할 경우 -->
+
+                        <!-- textarea 요소 사용할 경우 -->
+                        <div class="inputTextBox">
+                            <div class="inputTextBox__inputItem">
+                                <div contenteditable="true" class="inputTextBox__input">
+                                    <span class="inputTextBox__placeholder">내용을 입력하세요.</span>
+                                    내용 입력 시 inputTextBox__placeholder 삭제
+                                </div>
+                            </div>
+                            <span class="inputTextBox__count inputTextBox__count--alignRight"><span class="empText">6</span>/20</span>
+                        </div>
+                        <!-- //textarea 요소 사용할 경우 -->
+
                     </form>
                 </div>
             </div>
@@ -83,9 +77,6 @@
         $('.accordionBox__toggleBtn').click(function(){
             $(this).parent().parent().toggleClass('accordionBox--active');
             $(this).parent().next().slideToggle();
-        });
-        $('.selectBox__anchor .selectBox__btn').click(function(){
-            $(this).parent().parent().toggleClass('selectBox--active');
         });
     })
 </script>

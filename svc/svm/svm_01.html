@@ -7,8 +7,8 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-status-bar-style">
     <title>설문/투표</title>
-    <link rel="stylesheet" type="text/css" href="../../css/nanumsquare.css">
-    <link rel="stylesheet" type="text/css" href="../../css/svm.css">
+    <link rel="stylesheet" type="text/css" href="css/nanumsquare.css">
+    <link rel="stylesheet" type="text/css" href="css/svm.css">
 </head>
 <body>
 <div id="wrap">
@@ -33,19 +33,40 @@
                     <p class="surveyTitle__desc">현재 거주하고 있는 지역을 입력하세요.</p>
                 </div>
                 <div class="contentBox">
+                    <p class="objectiveBox__subDesc objectiveBox__subDesc--flexCnt"><span class="icon icon--doubleCheck"></span>복수선택</p>
                     <form action="">
-                        <div class="objectiveBox objectiveBox--either">
+                        <div class="objectiveBox">
                             <!-- [D] 선택 시 클래스 checkItem--selected 추가 또는 input 요소에 속성(attr) checked 추가 -->
                             <label class="checkItem">
+                                <!-- [D] 다중선택 시 input type="checkbox"로 변경 -->
                                 <input type="radio" name="test" class="checkItem__input" checked>
                                 <span class="checkItem__label">
-                                    <span class="checkItem__num">1</span>뉴욕
+                                    <span class="checkItem__num">1</span>부
                                 </span>
                             </label>
                             <label class="checkItem">
                                 <input type="radio" name="test" class="checkItem__input">
                                 <span class="checkItem__label">
-                                    <span class="checkItem__num">2</span>서울
+                                    <span class="checkItem__num">2</span>모
+                                </span>
+                            </label>
+                            <label class="checkItem">
+                                <input type="radio" name="test" class="checkItem__input">
+                                <span class="checkItem__label">
+                                    <span class="checkItem__num">3</span>조부모 등 친인척
+                                </span>
+                            </label>
+                            <label class="checkItem">
+                                <input type="radio" name="test" class="checkItem__input">
+                                <span class="checkItem__label">
+                                    <span class="checkItem__num">4</span>기타
+
+                                    <span class="inputTextBox">
+                                        <span class="inputTextBox__inputItem">
+                                            <input type="text" class="inputTextBox__input" placeholder="내용을 입력하세요." value="">
+                                        </span>
+                                        <span class="inputTextBox__count inputTextBox__count--alignRight"><span class="empText">6</span>/20</span>
+                                    </span>
                                 </span>
                             </label>
                         </div>
