@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+<title>회사게시판 모바일</title>
+<link rel="stylesheet" type="text/css" href="../../css/common_index.css">
+<style>
+	/* section>section{padding-left:30px;} */
+	section>.sec_h,
+	section>ul{margin-left:30px;}
+	section.group>.sec_h{margin-left:30px;}
+	section.single>.sec_h,
+	section.single>ul{margin-left:0;}
+	.flex_box{display:flex;}
+	.flex_box:after{display:block;clear:both;content:'';}
+	.flex_box .col{flex:1 1 auto;width:100%;box-sizing:border-box;}
+	.flex_box .col+.col{margin-left:15px;}
+	footer{clear:both;}
+	.del{text-decoration:line-through}
+
+	/* Process */
+	.prog{float:left;width:44px;height:17px;margin:-1px 6px 0 0;padding:2px 2px 1px;background:#ccc;color:#fff;font-size:12px;font-weight:bold;text-align:center;}
+	.todo{background:#415c7a;}				/* 준비중 */
+	.inprogress{background:#3185d4;}	/* 작업중 */
+	.done{background:#1fc47c;}				/* 완료 */
+	.new{background: red;} 					/* 신규 */
+
+	@media(max-width:768px){
+		.flex_box{flex-direction:column;}
+		.flex_box .col+.col{margin-left:0;}
+	}
+</style>
+</head>
+<body>
+
+<header role="banner">
+	<h1 class="hd_h1">회사게시판 모바일</h1>
+</header>
+<section class="group">
+	<section>
+		<h1 class="sec_h">메인</h1>
+		<ul>
+			<li><a href="wfm_00.html">메인(홈)_전체 <span>/ wfm_00.html</span></a></li>
+			<li class="subitem"><a href="wfm_00_2.html">메인(홈)_인기 <span>/ wfm_00_2.html</span></a></li>
+		</ul>
+		<h1 class="sec_h">공통</h1>
+		<ul>
+			<li><a href="wfm_01.html">카테고리 <span>/ wfm_01.html</span></a></li>
+			<li><a href="wfm_01_2.html">검색 <span>/ wfm_01_2.html</span></a></li>
+			<li><a href="wfm_01_3.html">회원 정보 <span>/ wfm_01_3.html</span></a></li>
+			<li><a href="wfm_01_4.html">댓글 <span>/ wfm_01_4.html</span></a></li>
+			<li><a href="wfm_01_5.html">열람멤버 <span>/ wfm_01_5.html</span></a></li>
+		</ul>
+		<h1 class="sec_h">게시판</h1>
+		<ul>
+			<li><a href="wfm_02.html">게시판 목록 (공지 탭) <span>/ wfm_02.html</span></a></li>
+			<li><a href="wfm_02_2.html">게시판 소개 <span>/ wfm_02_2.html</span></a></li>
+			<li><a href="wfm_02_3.html">글쓰기 <span>/ wfm_02_3.html</span></a></li>
+			<li class="subitem"><a href="wfm_02_4.html">글쓰기_투표<span>/ wfm_02_4.html</span></a></li>
+			<li class="subitem"><a href="wfm_02_5.html">글쓰기_투표 등록/편집<span>/ wfm_02_5.html</span></a></li>
+			<li><a href="wfm_02_6.html">게시글 상세<span>/ wfm_02_6.html</span></a></li>
+			<li class="subitem"><a href="wfm_02_7.html">게시글 상세 투표 Case<span>/ wfm_02_7.html</span></a></li>
+			<li><a href="wfm_02_8.html">피드형_게시판 목록 <span>/ wfm_02_8.html</span></a></li>
+			<li class="subitem"><a href="wfm_02_9.html">피드형_글쓰기 <span>/ wfm_02_9.html</span></a></li>
+			<li class="subitem"><a href="wfm_02_10.html">피드형_게시글 상세 <span>/ wfm_02_10.html</span></a></li>
+			<li class="subitem"><a href="wfm_02_11.html">피드형_게시글 업로드 사진 비율 Case <span>/ wfm_02_11.html</span></a></li>
+		</ul>
+		<h1 class="sec_h">엠티셋</h1>
+		<ul>
+			<li><a href="wfm_empty_01.html">엠티셋_상세댓글 <span>/ wfm_empty_01.html</span></a></li>
+			<li><a href="wfm_empty_02.html">엠티셋_상세삭제 <span>/ wfm_empty_02.html</span></a></li>
+			<li><a href="wfm_empty_03.html">엠티셋_열람멤버 <span>/ wfm_empty_03.html</span></a></li>
+			<li><a href="wfm_empty_04.html">엠티셋_댓글상세 <span>/ wfm_empty_04.html</span></a></li>
+		</ul>
+		<h1 class="sec_h">바텀시트</h1>
+		<ul>
+			<li><a href="wfm_layer_01.html">게시판 선택 <span>/ wfm_layer_01.html</span></a></li>
+			<li><a href="wfm_layer_02.html">투표한 멤버 <span>/ wfm_layer_02.html</span></a></li>
+			<li><a href="wfm_layer_03.html">영상추가 <span>/ wfm_layer_03.html</span></a></li>
+		</ul>
+		<h1 class="sec_h">다이얼로그</h1>
+		<ul>
+			<li><a href="wfm_dialog_00.html">공통 다이얼로그 <span>/ wfm_dialog_00.html</span></a></li>
+		</ul>
+	</section>
+
+</section>
+
+
+<footer role="contentinfo">
+
+</footer>
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<script src="../../../common_index.js"></script>
+</body>
+</html>

@@ -1,0 +1,105 @@
+.icon {
+  // icon--replyss
+  &--replyss {
+    @include spwfm(12px, 11px, -75px, -48px);
+
+    // .wfm__rowListItem .icon--replyss
+    .wfm__rowListItem & {
+      margin-top: -1px;
+      margin-right: 4px;
+    }
+  }
+
+  // icon--viewss
+  &--viewss {
+    @include spwfm(13px, 10px, -58px, -48px);
+
+    // .wfm__rowListItem .icon--viewss
+    .wfm__rowListItem & {
+      margin-top: -1px;
+      margin-left: 7px;
+      margin-right: 4px;
+    }
+  }
+
+  .wfmCategory__link & {
+    flex-shrink: 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    margin-top: 11px;
+    margin-right: 12px;
+    width: 24px;
+    height: 24px;
+  }
+
+  // icon--board
+  &--board {
+    &::before {
+      content: '';
+      @include absolCnt;
+      @include spbg(18px, 21px, 0, -22px);
+    }
+  }
+
+  // icon--blog
+  &--blog {
+    &::before {
+      content: '';
+      @include absolCnt;
+      @include spbg(19px, 19px, -47px, -22px);
+    }
+  }
+
+  // icon--gallery
+  &--gallery {
+    &::before {
+      content: '';
+      @include absolCnt;
+      @include spbg(19px, 19px, -23px, -22px);
+    }
+  }
+
+  // icon--feed
+  &--feed {
+    &::before {
+      content: '';
+      @include absolCnt;
+      @include spbg(21px, 19px, -406px, -24px);
+    }
+  }
+
+  // icon--quicklink
+  &--quicklink {
+    &::before {
+      content: '';
+      @include absolCnt;
+      @include spbg(22px, 12px, -289px, -22px);
+    }
+  }
+
+  // icon--heart
+  &--heart {
+    @include spwfm(20px, 18px, -312px, 0);
+  }
+
+  // icon--heartOn
+  &--heartOn {
+    @include spwfm(20px, 18px, -336px, 0);
+  }
+
+  // icon--heartss
+  &--heartss {
+    @include spwfm(16px, 14px, -20px, -48px);
+  }
+
+  // icon--heartssOn
+  &--heartssOn {
+    @include spwfm(16px, 14px, -39px, -48px);
+  }
+
+  // icon--reply
+  &--reply {
+    @include spwfm(20px, 18px, -119px, -22px);
+  }
+}

@@ -1,0 +1,121 @@
+.wfmBottomSheet {
+  overflow-y: auto;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  max-height: 90%;
+  padding: 20px 0;
+  background-color: #fff;
+  border-radius: 16px 16px 0 0;
+  box-sizing: border-box;
+  z-index: 10;
+  &::before {
+    content: '';
+    position: absolute;
+    top: 8px;
+    left: 50%;
+    width: 36px;
+    height: 4px;
+    background-color: #939393;
+    border-radius: 2px;
+    transform: translateX(-50%);
+  }
+  .icon {
+    flex-shrink: 0;
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 12px;
+    width: 24px;
+    height: 24px;
+  }
+  // wfmBottomSheet__box
+  &__box {
+    border-bottom: 1px solid #ededed;
+    &:last-of-type {
+      border-bottom: 0;
+    }
+  }
+  // wfmBottomSheet__title
+  &__title {
+    padding: 0 16px;
+    font-size: 16px;
+    font-weight: 900;
+    color: #222;
+    letter-spacing: -.32px;
+    line-height: 48px;
+    @include ellipsis;
+    em {
+      font-style: normal;
+      color: #2d80cd;
+    }
+  }
+  // wfmBottomSheet__categoryTitle
+  &__categoryTitle {
+    padding: 20px 16px 9px;
+    font-size: 12px;
+    color: #939393;
+    line-height: 16px;
+    letter-spacing: -.24px;
+    @include ellipsis;
+  }
+  // wfmBottomSheet__link
+  &__link {
+    position: relative;
+    display: block;
+    padding: 0 45px 0 16px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 48px;
+    letter-spacing: -.28px;
+    text-decoration: none;
+    color: #222;
+    @include ellipsis;
+  }
+  // wfmBottomSheet__item
+  &__item {
+    position: relative;
+    height: 48px;
+    @include flex(flex, normal, center);
+    &--selected {
+      &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 18px;
+        transform: translateY(-50%);
+        @include spwfm(18px, 13px, -218px, -48px);
+      }
+    }
+  }
+
+  // wfmBottomSheet__primaryBox
+  &__primaryBox {
+    margin-top: 20px;
+    @include flex(flex, normal, center);
+
+    .wfm__primaryBtn {
+      flex: 1;
+
+      + .wfm__primaryBtn {
+        margin-left: 4px;
+      }
+    }
+  }
+}
+
+.wfmLinkGroup {
+  padding: 12px 16px;
+
+  // wfmLinkGroup__heading
+  &__heading {
+    font-size: 12px;
+    letter-spacing: -.24px;
+    color: #939393;
+  }
+
+  .wfm__basicList {
+    margin-top: 12px;
+  }
+}

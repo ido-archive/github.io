@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi" content="telephone=no">
+    <meta name="theme-color" content="#2d80cd">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-status-bar-style" content="#2d80cd">
+    <title>회사게시판_모바일</title>
+    <link rel="stylesheet" type="text/css" href="../common_css/nanumsquare.css">
+    <link rel="stylesheet" type="text/css" href="css/wfm.css">
+</head>
+<body>
+<div id="wrap">
+    <div id="container">
+        <div class="wfm">
+            <div class="wfmHeader__wrap">
+                <div class="wfmHeader">
+                    <div class="wfmHeader__box">
+                        <a href="#" title="메인" class="wfmHeader__link">
+                            <span class="wfmHeader__logo wfmHeader__logo--close">닫기</span>
+                            <span class="wfmHeader__title">카테고리</span>
+                        </a>
+                    </div>
+                    <div class="wfmHeader__box">
+                        <button type="button" class="wfm__btnHome">홈</button>
+                    </div>
+                </div>
+            </div>
+            <div class="wfm__spinner">
+                <img src="/svc/wfm/img/spinner.png" alt="" width="32" class="wfm__spinnerIcon">
+            </div>
+            <div class="wfmCategory">
+                <ul class="wfmCategory__list">
+                    <li class="wfmCategory__item">
+                        <a href="#" title="" class="wfmCategory__link">
+                            <div class="wfmCategory__title"><span class="icon icon--board"></span><span class="wfm__badge">N</span>아래로 당기면 스피너가 보여요 아래로 당기면 스피너가 보여요아래로 당기면 스피너가 보여요</div>
+                        </a>
+                    </li>
+                </ul>
+                <ul class="wfmCategory__list wfmCategory__list--group">
+                    <!-- [D] wfmCategory__item : 활성화 시 클래스 wfmCategory__item--active 추가 -->
+                    <li class="wfmCategory__item wfmCategory__item--active">
+                        <a title="" class="wfmCategory__link wfmCategory__link--has"><div class="wfmCategory__title">WEHAGO 플랫폼 서비스 운영</div></a>
+                        <ul class="wfmCategory__list">
+                            <li class="wfmCategory__item">
+                                <a href="#" title="" class="wfmCategory__link">
+                                    <div class="wfmCategory__title"><span class="icon icon--blog"></span>WEHAGO 서비스기획팀WEHAGO 서비스기획팀WEHAGO 서비스기획팀WEHAGO 서비스기획팀WEHAGO 서비스기획팀</div>
+                                </a>
+                            </li>
+                            <li class="wfmCategory__item">
+                                <a href="#" title="" class="wfmCategory__link">
+                                    <div class="wfmCategory__title"><span class="icon icon--gallery"></span><span class="wfm__badge">N</span>WEHAGO 서비스기획팀</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- [D] wfmCategory__item : 활성화 시 클래스 wfmCategory__item--active 추가 -->
+                    <li class="wfmCategory__item wfmCategory__item--active">
+                        <a title="" class="wfmCategory__link  wfmCategory__link--has"><div class="wfmCategory__title">영업기획마케팅팀</div></a>
+                        <ul class="wfmCategory__list">
+                            <li class="wfmCategory__item">
+                                <a href="#" title="" class="wfmCategory__link">
+                                    <div class="wfmCategory__title"><span class="icon icon--feed"></span>기획마케팅팀 자유게시판</div>
+                                </a>
+                            </li>
+                            <li class="wfmCategory__item">
+                                <a href="#" title="" class="wfmCategory__link">
+                                    <div class="wfmCategory__title"><span class="icon icon--quicklink"></span>WEHAGO/NAHAGO 영업팀</div>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="wfmCategory__list">
+                    <li class="wfmCategory__item">
+                        <a href="#" title="" class="wfmCategory__link">
+                            <div class="wfmCategory__title"><span class="icon icon--quicklink"></span>공공데이터포털</div>
+                        </a>
+                    </li>
+                    <li class="wfmCategory__item">
+                        <a href="#" title="" class="wfmCategory__link">
+                            <div class="wfmCategory__title"><span class="icon icon--quicklink"></span>공공데이터포털</div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- [D] 디자인 확인 목적으로 생성한 js입니다. 개발시 삭제 부탁드립니다 -->
+<script src="../js/jquery-latest.min.js"></script>
+<script>
+    $(function() {
+        $('.wfm__moreToggle').click(function(){
+            $(this).toggleClass('wfm__moreToggle--open');
+            $('.wfmBoard__list--notice').toggle();
+        });
+
+        $('.wfm__tab .wfm__tabBtn').click(function(){
+            $('.wfm__tab .wfm__tabBtn').removeClass('wfm__tabBtn--active');
+            $(this).toggleClass('wfm__tabBtn--active')
+        })
+
+        $('.wfmCategory__link--has').click(function(){
+            $(this).parent().toggleClass('wfmCategory__item--active');
+            $(this).next().slideToggle();
+        })
+    })
+</script>
+</body>
+</html>

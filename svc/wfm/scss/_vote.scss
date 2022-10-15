@@ -1,0 +1,33 @@
+.wfmVote {
+  background: #f5f5f5;
+
+  .wfmBoard__box {
+    background: #fff;
+  }
+  .wfmBoard__box--add {
+    border-bottom: 0;
+  }
+  .wfmBoard__supports {
+    margin-top: 8px;
+  }
+  &ButtonBox {
+    display: flex;
+    gap: 8px;
+    padding: 16px 16px 24px;
+  }
+  &Button {
+    flex: 1;
+    height: 40px;
+    border-radius: 8px;
+    font-size: 14px;
+    letter-spacing: -.28px;
+    &--default {
+      color: #222;
+      background-color: #ededed;
+    }
+    &--press {
+      color: #fff;
+      background-color: #2d80cd;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+.wfmUserInfo {
+  .wfm__visualBox {
+    padding: 6px 16px 30px;
+    flex-direction: column;
+    @include flex(flex, center, center);
+    &::before {
+      bottom: -12px;
+    }
+  }
+
+  // wfmUserInfo__name
+  &__name {
+    display: block;
+    margin-top: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    color: #fff;
+  }
+
+  .wfmInfoList {
+    margin-top: 16px;
+    padding: $paddingSide;
+  }
+}

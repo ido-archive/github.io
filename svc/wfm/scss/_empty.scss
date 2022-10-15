@@ -1,0 +1,72 @@
+.wfm {
+    &Empty {
+        text-align: center;
+        &__title {
+            font-size: 14px;
+            color: #222;
+            letter-spacing: -.28px;
+        }
+        &__text {
+            display: block;
+            margin-top: 5px;
+            font-size: 12px;
+            color: #939393;
+            letter-spacing: -.24px;
+        }
+    }
+    .emptyTypeComment,
+    .emptyTypeDefault {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+    }
+    .emptyTypeComment {
+        height: calc(100vh - 102px);
+        .wfmEmpty {
+            &::before {
+                content: '';
+                display: block;
+                width: 128px;
+                height: 128px;
+                margin: 0 auto 12px;
+                background: url(/svc/wfm/img/icon_empty_01.png) no-repeat 0 0 / 128px 128px;
+            }
+        }
+    }
+    .emptyTypeDefault {
+        height: calc(100vh - 46px);
+        background: #fff;
+        .wfmEmpty {
+            &::before {
+                content: '';
+                display: block;
+                width: 128px;
+                height: 128px;
+                margin: 0 auto 12px;
+                background: url(/svc/wfm/img/icon_empty_02.png) no-repeat 0 0 / 128px 128px;
+            }
+
+            // wfmEmpty--type2 : 등록된 게시글 없음
+            &--type2 {
+                &::before {
+                    background-image: url(/svc/wfm/img/icon_empty_03.png);
+                }
+            }
+
+            // wfmEmpty--type3 : 검색결과 없음
+            &--type3 {
+                &::before {
+                    background-image: url(/svc/wfm/img/icon_empty_05.png);
+                }
+            }
+
+            // wfmEmpty--type4 : 읽기 권한 없음
+            &--type4 {
+                &::before {
+                    background-image: url(/svc/wfm/img/icon_empty_04.png);
+                }
+            }
+        }
+    }
+}
