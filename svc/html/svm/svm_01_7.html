@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi" content="telephone=no">
+    <meta name="theme-color">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-status-bar-style">
+    <title>설문/투표</title>
+    <link rel="stylesheet" type="text/css" href="../../css/nanumsquare.css">
+    <link rel="stylesheet" type="text/css" href="../../css/svm.css">
+</head>
+<body>
+<div id="wrap">
+    <div class="container">
+        <div class="svm">
+            <div class="svmHeader svmHeader--flexBtw">
+                <div class="svmHeader__item">
+                    <button type="button" class="svmHeader__btn"><span class="icon icon--back">이전</span></button>
+                </div>
+                <div class="svmHeader__titleBox">
+                    <h1 class="svmHeader__title">설문 결과 보기</h1>
+                </div>
+            </div>
+
+            <div class="ticketToggle__wrap">
+                <!-- [D] 활성화 시 클래스 ticketToggle--active 추가 -->
+                <div class="ticketToggle">
+                    <button type="button" class="ticketToggle__btn"><span class="icon icon--arrowToggle">접기/ 펼치기</span></button>
+                    <ul class="ticketToggle__list">
+                        <!-- [D] 활성화 시 클래스 ticketToggle__item--active 추가 -->
+                        <li class="ticketToggle__item ticketToggle__item--active">
+                            <a href="#" class="ticketToggle__answerLink">1</a>
+                        </li>
+                        <li class="ticketToggle__item">
+                            <a href="#moveTest" class="ticketToggle__answerLink">2</a>
+                        </li>
+                        <li class="ticketToggle__item">
+                            <a href="#" class="ticketToggle__answerLink">3</a>
+                        </li>
+                        <li class="ticketToggle__item">
+                            <a href="#" class="ticketToggle__answerLink">4</a>
+                        </li>
+                        <li class="ticketToggle__item">
+                            <a href="#" class="ticketToggle__answerLink">5</a>
+                        </li>
+                        <li class="ticketToggle__item">
+                            <a href="#" class="ticketToggle__answerLink">6</a>
+                        </li>
+                        <li class="ticketToggle__item">
+                            <a href="#" class="ticketToggle__answerLink">7</a>
+                        </li>
+                        <li class="ticketToggle__item">
+                            <a href="#" class="ticketToggle__answerLink">8</a>
+                        </li>
+                        <li class="ticketToggle__item">
+                            <a href="#" class="ticketToggle__answerLink">9</a>
+                        </li>
+                        <li class="ticketToggle__item">
+                            <a href="#" class="ticketToggle__answerLink">10</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- [D] svmContent--surveyProgress : 설문 진행 -->
+            <div class="svmContent svmContent--surveyProgress">
+                <div class="surveyCount surveyCount--flexMid surveyCount--keepSize">
+                    <div class="surveyCount__num">
+                        <span class="surveyCount__numNow">01</span>/26
+                    </div>
+                    <h1 class="surveyCount__title">업무환경</h1>
+                </div>
+                <div class="titleBox">
+                    <h2 class="surveyTitle">현재 <strong class="surveyTitle--strong">어떻게 근무</strong>하고 계신가요?</h2>
+                    <p class="surveyTitle__desc">부연설명을 입력하세요.</p>
+                </div>
+                <div class="contentBox">
+                    <div class="resultBox">
+                        <div class="objectItem objectItem--flexBtw">
+                            <div class="objectItem__rateBar" style="width: 20%;"></div>
+                            <div class="objectItem__label">
+                                사무실 출퇴근
+                            </div>
+                            <div class="objectItem__poll">
+                                <span class="objectItem__vote">20표</span>
+                                <strong class="objectItem__rate">20%</strong>
+                            </div>
+                        </div>
+                        <!-- [D] objectItem : 최다 선택된 항목일 경우 클래스 objectItem--largest 추가 -->
+                        <div class="objectItem objectItem--flexBtw objectItem--largest">
+                            <div class="objectItem__rateBar" style="width: 50%;"></div>
+                            <div class="objectItem__label">
+                                재택근무
+                            </div>
+                            <div class="objectItem__poll">
+                                <span class="objectItem__vote">50표</span>
+                                <strong class="objectItem__rate">50%</strong>
+                            </div>
+                        </div>
+                        <!-- [D] objectItem : 사용자가 선택한 항목일 경우 클래스 objectItem--selected 추가 -->
+                        <div class="objectItem objectItem--flexBtw objectItem--selected">
+                            <div class="objectItem__rateBar" style="width: 20%;"></div>
+                            <div class="objectItem__label">
+                                사무실 출퇴근 + 재택근무
+                            </div>
+                            <div class="objectItem__poll">
+                                <span class="objectItem__vote">20표</span>
+                                <strong class="objectItem__rate">20%</strong>
+                            </div>
+                        </div>
+                        <div class="objectItem objectItem--flexBtw">
+                            <div class="objectItem__rateBar" style="width: 10%;"></div>
+                            <div class="objectItem__label">
+                                기타
+                            </div>
+                            <div class="objectItem__poll">
+                                <span class="objectItem__vote">10표</span>
+                                <strong class="objectItem__rate">10%</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="moveTest" class="surveyCount surveyCount--flexMid surveyCount--keepSize">
+                    <div class="surveyCount__num">
+                        <span class="surveyCount__numNow">02</span>/26
+                    </div>
+                    <h1 class="surveyCount__title">업무환경</h1>
+                </div>
+                <div class="titleBox">
+                    <h2 class="surveyTitle"><strong class="surveyTitle--strong">생산적인 업무를 위해 가장 필요한 것</strong>은 무엇인지 자유롭게 작성해 주세요.</h2>
+                    <p class="surveyTitle__desc">부연설명을 입력하세요.</p>
+                </div>
+                <div class="contentBox">
+                    <div class="inputTextBox">
+                        <span class="inputTextBox__inputItem">
+                            <input type="text" class="inputTextBox__input" placeholder="내용을 입력하세요." value="시간" readonly>
+                        </span>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- [D] 디자인 확인 목적으로 생성한 js입니다. 개발시 삭제 부탁드립니다 -->
+<script src="../../js/jquery-latest.min.js"></script>
+<script>
+    $(function(){
+        $('.accordionBox__toggleBtn').click(function(){
+            $(this).parent().parent().toggleClass('accordionBox--active');
+            $(this).parent().next().slideToggle();
+        });
+
+        $('.ticketToggle__btn').click(function(){
+            $(this).parent().toggleClass('ticketToggle--active');
+        });
+    })
+</script>
+
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+<title>설문/투표 모바일</title>
+<link rel="stylesheet" type="text/css" href="../../css/common_index.css">
+<style>
+	/* section>section{padding-left:30px;} */
+	section>.sec_h,
+	section>ul{margin-left:30px;}
+	section.group>.sec_h{margin-left:30px;}
+	section.single>.sec_h,
+	section.single>ul{margin-left:0;}
+	.flex_box{display:flex;}
+	.flex_box:after{display:block;clear:both;content:'';}
+	.flex_box .col{flex:1 1 auto;width:100%;box-sizing:border-box;}
+	.flex_box .col+.col{margin-left:15px;}
+	footer{clear:both;}
+	.del{text-decoration:line-through}
+
+	/* Process */
+	.prog{float:left;width:44px;height:17px;margin:-1px 6px 0 0;padding:2px 2px 1px;background:#ccc;color:#fff;font-size:12px;font-weight:bold;text-align:center;}
+	.todo{background:#415c7a;}				/* 준비중 */
+	.inprogress{background:#1c90fb;}	/* 작업중 */
+	.done{background:#1fc47c;}				/* 완료 */
+	.new{background: red;} 					/* 신규 */
+
+	@media(max-width:768px){
+		.flex_box{flex-direction:column;}
+		.flex_box .col+.col{margin-left:0;}
+	}
+</style>
+</head>
+<body>
+
+<header role="banner">
+	<h1 class="hd_h1">설문/투표 모바일</h1>
+</header>
+<section class="group">
+	<section>
+		<h1 class="sec_h">메인</h1>
+		<ul>
+			<li><a href="svm_00.html">설문 참여 진입(설문 상세) <span>/ svm_00.html</span></a></li>
+			<li><a href="svm_00_2.html">설문 참여 진입(설문 상세)_하단 버튼 케이스 <span>/ svm_00_2.html</span></a></li>
+			<li><a href="svm_00_3.html">댓글 전체보기 <span>/ svm_00_3.html</span></a></li>
+			<li class="subitem"><a href="svm_00_3e.html">댓글 전체보기_엠티셋 <span>/ svm_00_3e.html</span></a></li>
+		</ul>
+	</section>
+
+	<section>
+		<h1 class="sec_h">설문투표 진행</h1>
+		<ul>
+			<li><a href="svm_03.html">주관식 <span>/ svm_03.html</span></a></li>
+			<li><a href="svm_01.html">객관식 <span>/ svm_01.html</span></a></li>
+			<li class="subitem"><a href="svm_01_2.html">양자택일_텍스트 <span>/ svm_01_2.html</span></a></li>
+			<li class="subitem"><a href="svm_01_3.html">양자택일_이미지 <span>/ svm_01_3.html</span></a></li>
+			<li class="subitem"><a href="svm_01_4.html">드롭다운 셀렉트박스 <span>/ svm_01_4.html</span></a></li>
+			<li class="subitem"><a href="svm_01_5.html">리커트 척도 <span>/ svm_01_5.html</span></a></li>
+			<li><a href="svm_01_6.html">내 답변 보기 <span>/ svm_01_6.html</span></a></li>
+			<li><a href="svm_01_7.html">설문 결과 보기 <span>/ svm_01_7.html</span></a></li>
+		</ul>
+	</section>
+
+	<section>
+		<h1 class="sec_h">본인확인</h1>
+		<ul>
+			<li><a href="svm_02.html">약관 동의 <span>/ svm_02.html</span></a></li>
+			<li><a href="svm_02_2.html">휴대전화 번호 입력 <span>/ svm_02_2.html</span></a></li>
+			<li class="subitem"><a href="svm_02_3.html">인증번호 입력 <span>/ svm_02_3.html</span></a></li>		</ul>
+	</section>
+
+	 <section>
+		<h1 class="sec_h">바텀시트</h1>
+		<ul>
+			<li><a href="svm_layer_00.html">바텀시트_객관식 입력 <span>/ svm_layer_00.html</span></a></li>
+		</ul>
+	</section>
+
+	<section>
+		<h1 class="sec_h">다이얼로그 (popup/ dialog/ alert)</h1>
+		<ul>
+			<li><a href="svm_dialog_00.html">다이얼로그 <span>/ svm_dialog_00.html</span></a></li>
+		</ul>
+	</section>
+
+</section>
+
+
+<footer role="contentinfo">
+
+</footer>
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<script src="../../../common_index.js"></script>
+</body>
+</html>

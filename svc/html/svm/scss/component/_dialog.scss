@@ -1,0 +1,84 @@
+.svm {
+  .dialogWrap {
+    position: absolute;
+    z-index: 11;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    @include flex(flex, center, center);
+  }
+  .dialog {
+    padding: 40px 16px 30px;
+    width: 75%;
+    max-width: 300px;
+    background: #fff;
+    border-radius: 14px;
+
+    // dialog__iconBox
+    &__iconBox {
+      margin-bottom: 30px;
+      text-align: center;
+    }
+
+    // dialog__icon
+    &__icon {
+      max-width: 48px;
+    }
+
+    // dialog__content
+    &__content {
+      text-align: center;
+    }
+
+    // dialog__title
+    &__title {
+      font-size: 16px;
+      font-weight: 900;
+      line-height: 22px;
+      color: rgba(0,0,0,.87);
+    }
+
+    // dialog__desc
+    &__desc {
+      margin-top: 18px;
+      font-size: 13px;
+      line-height: 20px;
+      color: rgba(0,0,0,.6);
+    }
+
+    // dialog__subDesc
+    &__subDesc {
+      margin-top: 8px;
+      font-size: 12px;
+      line-height: 18px;
+      color: rgba(0,0,0,.4);
+    }
+
+    // dialog__primaryBox
+    &__primaryBox {
+      margin-top: 30px;
+
+      .primaryBtn {
+        width: 100%;
+        &:not(:first-of-type) {
+          margin-top: 8px;
+        }
+      }
+    }
+
+    // dialog__linkItem
+    &__linkItem {
+      display: inline-block;
+      margin-top: 12px;
+      vertical-align: top;
+      text-decoration: underline;
+      text-underline-position: under;
+      font-size: 12px;
+      line-height: 15px;
+      letter-spacing: -.18px;
+      color: #a5a5a5;
+    }
+  }
+
+}

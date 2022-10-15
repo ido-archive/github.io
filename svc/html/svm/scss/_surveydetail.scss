@@ -1,0 +1,73 @@
+.svm {
+  &Content {
+    // svmContent--surveyDetail
+    &--surveyDetail {
+      .titleBox {
+        padding: 20px 20px 25px;
+        border-bottom: 1px solid #f2f2f2;
+
+        // titleBox__subTitle
+        &__subTitle {
+          margin-bottom: 10px;
+          font-size: 13px;
+          font-weight: 700;
+          color: #717171;
+
+          .label {
+            margin-right: 4px;
+          }
+        }
+
+        // titleBox__postInfo
+        &__postInfo {
+          margin-top: 16px;
+        }
+
+        // titleBox__infoItem
+        &__infoItem {
+          font-size: 11px;
+          color: #949494;
+
+          + .titleBox__infoItem {
+            margin-left: 12px;
+          }
+          .icon {
+            margin-right: 2px;
+          }
+        }
+
+        // titleBox__checkin
+        &__checkin {
+          font-size: 12px;
+          font-weight: 700;
+          letter-spacing: -.18px;
+          color: #127eff;
+
+          .icon {
+            margin-right: 4px;
+          }
+        }
+      }
+
+      .postingContent {
+        padding: 25px 20px;
+
+        p {
+          font-size: 13px;
+          letter-spacing: -.26px;
+          line-height: 24px;
+          color: #575757;
+        }
+
+        // postingContent__insideBox
+        &__insideBox {
+          margin-top: 20px;
+        }
+
+        .tagBox {
+          margin-top: 18px;
+        }
+      }
+    }
+  }
+}
