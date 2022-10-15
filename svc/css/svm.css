@@ -109,7 +109,7 @@ img{max-width:100%;height:auto}
 .svm .clauseAgreement__select{min-height:48px;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:normal;-ms-flex-pack:normal;justify-content:normal;-webkit-box-align:center;-ms-flex-align:center;align-items:center}
 .svm .clauseAgreement__select--all{border-bottom:1px solid #efefef}
 .svm .clauseAgreement__select--all .checkInput__label{font-size:16px;font-weight:900;color:#000}
-.svm .clauseAgreement__btn{-webkit-box-flex:1;-ms-flex:1;flex:1;padding:12px 4px;text-align:left;font-size:15px;font-weight:700;line-height:22px;letter-spacing:-.23px;color:#212121}
+.svm .clauseAgreement__btn{-webkit-box-flex:1;-ms-flex:1;flex:1;padding:12px 4px;text-align:left;font-size:15px;font-weight:700;line-height:22px;letter-spacing:-.23px;color:#212121;word-break: keep-all}
 .svm .clauseAgreement__btn .icon--arrowMove{-ms-flex-negative:0;flex-shrink:0;width:38px}
 .svm .resultBox .objectItem+.objectItem{margin-top:10px}
 .svm .objectItem{position:relative;padding:0 18px;height:58px;border:1px solid #e4e4e4;border-radius:12px;overflow:hidden}
