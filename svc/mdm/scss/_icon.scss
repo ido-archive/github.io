@@ -1,0 +1,332 @@
+.mdm {
+  .icon {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 10px;
+    color: transparent;
+    overflow: hidden;
+
+    // icon--notice
+    &--notice {
+      width: 24px;
+      height: 24px;
+      &::before {
+        content: '';
+        @include absolSp(19px, 18px, -88px, -79px);
+      }
+    }
+
+    // icon--party
+    &--party {
+      width: 24px;
+      height: 24px;
+      &::before {
+        content: '';
+        @include absolSp(21px, 21px, -110px, -79px);
+      }
+    }
+
+    // icon--reply
+    &--reply {
+      width: 24px;
+      height: 24px;
+      &::before {
+        content: '';
+        @include absolSp(20px, 20px, -64px, -79px);
+      }
+    }
+
+    // icon--timemachine
+    &--timemachine {
+      width: 24px;
+      height: 24px;
+      &::before {
+        content: '';
+        @include absolSp(22px, 20px, -134px, -79px);
+      }
+    }
+
+    // icon--alignLeft
+    &--alignLeft {
+      width: 16px;
+      height: 16px;
+      &::before {
+        content: '';
+        @include absolSp(13px, 11px, -174px, -40px);
+      }
+    }
+
+    // icon--alignCenter
+    &--alignCenter {
+      width: 16px;
+      height: 16px;
+      &::before {
+        content: '';
+        @include absolSp(13px, 11px, -157px, -40px);
+      }
+    }
+
+    // icon--alignRight
+    &--alignRight {
+      width: 16px;
+      height: 16px;
+      &::before {
+        content: '';
+        @include absolSp(13px, 11px, -140px, -40px);
+      }
+    }
+
+    // icon--alignBoth
+    &--alignBoth {
+      width: 16px;
+      height: 16px;
+      &::before {
+        content: '';
+        @include absolSp(13px, 11px, -123px, -40px);
+      }
+    }
+
+    // icon--add
+    &--add {
+      vertical-align: middle;
+      box-sizing: border-box;
+      width: 20px;
+      height: 20px;
+      &::before {
+        content: '';
+        @include absolSp(13px, 13px, -191px, -40px);
+      }
+    }
+
+    // icon--square
+    &--square {
+      vertical-align: middle;
+      width: 16px;
+      height: 16px;
+      &::before {
+        content: '';
+        @include absolSp(16px, 16px, -182px, -22px);
+      }
+    }
+
+    // icon--triangle
+    &--triangle {
+      vertical-align: middle;
+      width: 16px;
+      height: 16px;
+      &::before {
+        content: '';
+        @include absolSp(17px, 14px, -221px, -22px);
+      }
+    }
+
+    // icon--circle
+    &--circle {
+      vertical-align: middle;
+      width: 16px;
+      height: 16px;
+      &::before {
+        content: '';
+        @include absolSp(16px, 16px, -201px, -22px);
+      }
+    }
+
+    // icon--guide
+    &--guide {
+      width: 24px;
+      height: 24px;
+      &::before {
+        content: '';
+        @include absolSp(20px, 20px, -81px ,-52px);
+      }
+    }
+
+    // icon--fix
+    &--fix {
+      width: 18px;
+      height: 18px;
+      &::before {
+        content: '';
+        @include absolSp(11px, 13px, -200px, -54px);
+        margin-top: -6px;
+        margin-left: -6px;
+      }
+    }
+
+    // icon--download
+    &--download {
+      width: 18px;
+      height: 18px;
+      &::before {
+        content: '';
+        @include absolSp(14px, 14px, -182px, -54px);
+      }
+    }
+
+    // icon--bookmark
+    &--bookmark {
+      width: 18px;
+      height: 18px;
+      &::before {
+        content: '';
+        @include absolSp(12px, 15px, -228px, -40px);
+        margin-top: -8px;
+      }
+    }
+
+    // icon--zoomOut
+    &--zoomOut {
+      width: 18px;
+      height: 18px;
+      &::before {
+        content: '';
+        @include absolSp(15px, 15px, -124px, -54px);
+      }
+    }
+
+    // icon--zoomIn
+    &--zoomIn {
+      width: 18px;
+      height: 18px;
+      &::before {
+        content: '';
+        @include absolSp(15px, 15px, -105px, -54px);
+      }
+    }
+
+    // icon--undo
+    &--undo {
+      width: 18px;
+      height: 18px;
+      &::before {
+        content: '';
+        @include absolSp(16px, 15px, -143px, -54px);
+      }
+    }
+
+    // icon--redo
+    &--redo {
+      width: 18px;
+      height: 18px;
+      &::before {
+        content: '';
+        @include absolSp(16px, 15px, -162px, -54px);
+      }
+    }
+
+    // icon--view
+    &--view {
+      width: 18px;
+      height: 18px;
+      &::before {
+        content: '';
+        @include absolSp(16px, 12px, -65px, -104px);
+        margin-top: -5px;
+      }
+    }
+
+    // icon--viewOn
+    &--viewOn {
+      width: 18px;
+      height: 18px;
+      &::before {
+        content: '';
+        @include absolSp(16px, 12px, -85px, -104px);
+        margin-top: -5px;
+      }
+    }
+
+    // icon--grid
+    &--grid {
+      width: 18px;
+      height: 18px;
+      &::before {
+        content: '';
+        @include absolSp(15px, 15px, -105px, -104px);
+      }
+    }
+
+    // icon--dots
+    &--dots {
+      width: 18px;
+      height: 18px;
+      &::before {
+        content: '';
+        @include absolSp(15px, 15px, -124px, -104px);
+      }
+    }
+
+    // icon--live
+    &--live {
+      width: 18px;
+      height: 18px;
+      &::before {
+        content: '';
+        @include absolSp(17px, 16px, -161px, -104px);
+      }
+    }
+
+    // icon--zoom
+    &--zoom {
+      width: 18px;
+      height: 18px;
+      &::before {
+        content: '';
+        @include absolSp(13px, 13px, -143px, -104px);
+      }
+    }
+
+    // icon--more
+    &--more {
+      width: 20px;
+      height: 20px;
+      &::before {
+        content: '';
+        @include absolSp(3px, 13px, -245px, -79px);
+      }
+    }
+
+    // icon--emojiAdd
+    &--emojiAdd {
+      width: 16px;
+      height: 16px;
+      &::before {
+        content: '';
+        @include absolSp(16px, 16px, -224px, -79px);
+      }
+    }
+
+    // icon--nodeAdd
+    &--nodeAdd {
+      width: 28px;
+      height: 28px;
+      color: transparent;
+      &::before {
+        content: '';
+        @include absolSp(22px, 22px, -52px, -52px);
+      }
+    }
+
+    // icon--nodeArrow
+    &--nodeArrow {
+      width: 28px;
+      height: 28px;
+      color: transparent;
+      &::before {
+        content: '';
+        @include absolSp(22px, 22px, -182px, -79px);
+      }
+    }
+
+    // icon--master
+    &--master {
+      width: 12px;
+      height: 12px;
+      &::before {
+        content: '';
+        @include absolSp(11px, 10px, -34px, -111px);
+      }
+    }
+  }
+}

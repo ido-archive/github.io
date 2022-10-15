@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no,target-densitydpi=medium-dpi">
+<title>마인드맵</title>
+<link rel="stylesheet" type="text/css" href="../../css/common_index.css">
+<style>
+	/* section>section{padding-left:30px;} */
+	section>.sec_h,
+	section>ul{margin-left:30px;}
+	section.group>.sec_h{margin-left:30px;}
+	section.single>.sec_h,
+	section.single>ul{margin-left:0;}
+	.flex_box{display:flex;}
+	.flex_box:after{display:block;clear:both;content:'';}
+	.flex_box .col{flex:1 1 auto;width:100%;box-sizing:border-box;}
+	.flex_box .col+.col{margin-left:15px;}
+	footer{clear:both;}
+	.del{text-decoration:line-through}
+
+	/* Process */
+	.prog{float:left;width:44px;height:17px;margin:-1px 6px 0 0;padding:2px 2px 1px;background:#ccc;color:#fff;font-size:12px;font-weight:bold;text-align:center;}
+	.todo{background:#415c7a;}				/* 준비중 */
+	.inprogress{background:#3a77d2;}	/* 작업중 */
+	.done{background:#1fc47c;}				/* 완료 */
+	.new{background: red;} 					/* 신규 */
+
+	@media(max-width:768px){
+		.flex_box{flex-direction:column;}
+		.flex_box .col+.col{margin-left:0;}
+	}
+</style>
+</head>
+<body>
+
+<header role="banner">
+	<h1 class="hd_h1">마인드맵</h1>
+</header>
+<section class="group">
+	<section>
+		<h1 class="sec_h">메인</h1>
+		<ul>
+			<li><a href="mdm_00.html">레이아웃 <span>/ mdm_00.html</span></a></li>
+			<li><a href="mdm_00_2.html">노드 <span>/ mdm_00_2.html</span></a></li>
+			<li><a href="mdm_01.html">주석(댓글) <span>/ mdm_01.html</span></a></li>
+			<li><a href="mdm_02_01.html">버전기록 <span>/ mdm_02_01.html</span></a></li>
+			<li class="subitem"><a href="mdm_02_02.html">버전기록_검색결과 <span>/ mdm_02_02.html</span></a></li>
+			<li class="subitem"><a href="mdm_02_03.html">버전기록_검색결과 없음 <span>/ mdm_02_03.html</span></a></li>
+			<li><a href="mdm_03.html">참여자 확인 <span>/ mdm_03.html</span></a></li>
+			<li class="subitem"><a href="mdm_03_02.html">참여자 확인_설정 클릭 시(참여자 선택) <span>/ mdm_03_02.html</span></a></li>
+			<li class="subitem"><a href="mdm_03_03.html">참여자 확인_설정 클릭 시(참여자 선택)_액션바 긴 케이스 <span>/ mdm_03_03.html</span></a></li>
+			<li><a href="mdm_empty.html">엠티셋 <span>/ mdm_empty.html</span></a></li>
+		</ul>
+	</section>
+
+	<section>
+		<h1 class="sec_h">팝업</h1>
+		<ul>
+			<li><a href="/html/dialog/mdm_dialog_00.html">팝업 <span>/ mdm_dialog_00.html</span></a></li>
+		</ul>
+	</section>
+
+</section>
+
+
+<footer role="contentinfo">
+
+</footer>
+<script src="//code.jquery.com/jquery-latest.min.js"></script>
+<script src="../../../common_index.js"></script>
+</body>
+</html>

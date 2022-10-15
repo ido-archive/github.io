@@ -1,0 +1,212 @@
+.mdm {
+  .replyBox {
+    padding: 16px 14px;
+    border: 1px solid #ededed;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .06);
+
+    + .replyBox {
+      margin-top: 10px;
+    }
+
+    // replyBox--blue
+    &--blue {
+      border-color: #e5f0ff;
+      background-color: #e5f0ff;
+    }
+
+    // replyBox--yellow
+    &--yellow {
+      border-color: #fff7d6;
+      background-color: #fff7d6;
+    }
+
+    // replyBox__dayTitle
+    &__dayTitle {
+      display: block;
+      margin-top: 20px;
+      margin-bottom: 10px;
+      font-size: 14px;
+      font-weight: 900;
+      color: #4a4a4a;
+    }
+
+    // replyBox__textArea
+    &__textArea {
+      margin-top: 10px;
+    }
+
+    // replyBox__desc
+    &__desc {
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: -.6px;
+      color: #4a4a4a;
+    }
+
+    // replyBox__textInput
+    &__textInput {
+      position: relative;
+      padding: 4px;
+      box-sizing: border-box;
+      max-height: 105px;
+      font-size: 12px;
+      line-height: 18px;
+      letter-spacing: -.6px;
+      color: #4a4a4a;
+      word-break: break-all;
+      overflow-wrap: break-word;
+      overflow-y: auto;
+      border-radius: 4px;
+      &:focus {
+        outline: 1px solid #4a4a4a;
+      }
+    }
+
+    // replyBox__placeholder
+    &__placeholder {
+      font-size: 12px;
+      line-height: 18px;
+      color: rgba(0, 0, 0, .3);
+    }
+
+    // replyBox__primaryBox
+    &__primaryBox {
+      position: relative;
+      margin-top: 10px;
+      text-align: right;
+
+    }
+
+  }
+
+  .reReplyBox {
+    position: relative;
+    margin-top: 12px;
+    padding-left: 24px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 2px;
+      left: 2px;
+      @include spbg(13px, 15px, -48px, -111px);
+    }
+
+    .profileBox {
+      align-items: normal;
+    }
+    .thumbBox {
+      margin-top: 3px;
+    }
+
+    .replyBox__desc {
+      font-size: 11px;
+      color: rgba(0, 0, 0, .5);
+    }
+
+    .profileInfo__name {
+      font-size: 12px;
+      letter-spacing: -.6px;
+    }
+
+    .profileInfo__date {
+      font-size: 10px;
+      letter-spacing: -.5px;
+    }
+  }
+
+  .replyMoreOpt {
+    margin-top: 14px;
+    padding-top: 10px;
+    border-top: 1px solid rgba(74, 74, 74, .2);
+
+    // replyMoreOpt__writeArea
+    &__writeArea {
+      margin-bottom: 6px;
+      @include flex(flex, normal, center);
+
+      .input__text {
+        flex: 1;
+      }
+      .common_round_btn {
+        flex-shrink: 0;
+        margin-left: 4px;
+      }
+    }
+  }
+
+  .partiBox {
+
+    // partiBox__optArea
+    &__optArea {
+      margin-bottom: 10px;
+      @include flex(flex, space-b, center);
+    }
+
+    // partiBox__title
+    &__title {
+      font-size: 16px;
+      font-weight: 900;
+      letter-spacing: -.8px;
+      color: #4a4a4a;
+    }
+
+    // partiBox__optArea
+    &__optArea {
+      .common_component_select {
+        margin-right: 4px;
+        width: 90px;
+      }
+      .common_round_btn {
+        &.selected {
+          border-color: $blue;
+          font-weight: 900;
+          color: $blue;
+        }
+      }
+    }
+
+    // partiBox__optGroup
+    &__optGroup {
+      @include flex(flex, normal, center);
+    }
+  }
+
+  .partiList {
+
+    // partiList__item
+    &__item {
+      position: relative;
+      &:not(:first-of-type) {
+        margin-top: 6px;
+      }
+
+      .profileBox {
+        padding: 12px 14px;
+        width: 100%;
+        border: 1px solid #d3d3d3;
+        background: #fff;
+        border-radius: 4px;
+        &:hover {
+          border-color: $blue;
+        }
+      }
+
+      // partiList__item--selected
+      &--selected {
+        .profileBox {
+          border-color: $blue;
+        }
+        .icon_round_check {
+          background-position: 0 -304px;
+        }
+      }
+
+      .icon_round_check {
+        margin-right: 8px;
+      }
+    }
+  }
+}

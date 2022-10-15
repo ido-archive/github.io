@@ -1,0 +1,512 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta id="viewport" name="viewport" content="width=1280">
+<title>마인드맵</title>
+<link rel="stylesheet" type="text/css" href="../common_css/nanumsquare.css">
+<link rel="stylesheet" type="text/css" href="../common_css/common.css">
+<link rel="stylesheet" type="text/css" href="css/mdm.css">
+</head>
+<body>
+<div id="wrap" class="dz_font">
+    <div include-html="../include/inc_header.html" class="header">
+        <!-- [D] Common header area -->
+    </div>
+    <div class="mdm container container--flexCol">
+        <div class="subHeader">
+            <div class="subHeader__group">
+                <div class="subHeader__bundle">
+                    <button type="button" class="btn__insert">Insert</button>
+                    <span class="bar"></span>
+                    <div class="inputItem">
+                        <input type="text" id="inpTitle" class="inputItem__input" placeholder="제목을 입력하세요." title="제목 입력" value="KanKan 마인드맵">
+                    </div>
+                    <h2 class="subHeader__title">KanKan 마인드맵</h2>
+                    <button type="button" class="btn__fav"><span class="blind">중요</span></button>
+                    <button type="button" class="btn__fav btn__fav--selected"><span class="blind">중요</span></button>
+                </div>
+                <div class="subHeader__bundle">
+                    <button type="button" class="btn__tool"><span class="icon icon--notice">알림</span><span class="badge">99+</span></button>
+                    <button type="button" class="btn__tool btn__tool--selected"><span class="icon icon--party">참여자</span></button>
+                    <button type="button" class="btn__tool"><span class="icon icon--reply">덧글</span><span class="badge">3</span></button>
+                    <button type="button" class="btn__tool"><span class="icon icon--timemachine">타임머신</span></button>
+                </div>
+            </div>
+
+        </div>
+        <div class="contents">
+            <!-- [D] 격자 패턴 : 클래스 mapArea--ptGrid 추가 / 도트 패턴 : 클래스 mapArea--ptDots 추가-->
+            <!-- [D] 패턴 미사용 시 클래스 mapArea만 사용 -->
+            <div class="mapArea mapArea--ptGrid">
+                <!-- [D] 도구영역 고정 시 (활성화 시) 클래스 btn__fix--active 추가 -->
+                <button type="button" class="btn__fix btn__fix--active"><span class="icon icon--fix">도구영역 고정/해제</span></button>
+                <div class="toolGroup toolGroup--row">
+                    <div class="toolGroup__item">
+                        <button type="button" class="toolGroup__btn"><span class="icon icon--download">다운로드</span></button>
+                    </div>
+                    <div class="toolGroup__item">
+                        <button type="button" class="toolGroup__btn"><span class="icon icon--bookmark">북마크</span></button>
+                    </div>
+                </div>
+                <div class="toolGroup">
+                    <div class="toolGroup__box toolGroup__box--col">
+                        <div class="toolGroup__item">
+                            <!-- [D] 비활성화 시 클래스 toolGroup__btn--inactive 추가 -->
+                            <button type="button" class="toolGroup__btn toolGroup__btn--inactive"><span class="icon icon--zoomOut">축소</span></button>
+                        </div>
+                        <div class="toolGroup__item">100%</div>
+                        <div class="toolGroup__item">
+                            <button type="button" class="toolGroup__btn"><span class="icon icon--zoomIn">확대</span></button>
+                        </div>
+                    </div>
+                    <div class="toolGroup__box toolGroup__box--col">
+                        <div class="toolGroup__item">
+                            <!-- [D] 비활성화 시 클래스 toolGroup__btn--inactive 추가 -->
+                            <button type="button" class="toolGroup__btn toolGroup__btn--inactive"><span class="icon icon--undo"></span><span class="toolGroup__btnText">undo</span></button>
+                        </div>
+                        <div class="toolGroup__item">
+                            <button type="button" class="toolGroup__btn"><span class="icon icon--redo"></span><span class="toolGroup__btnText">redo</span></button>
+                        </div>
+                    </div>
+                    <div class="toolGroup__box toolGroup__box--bundle">
+                        <div class="toolGroup__item">
+                            <!-- [D] toolGroup__btn:: 선택되었을 시 (활성화 시) 클래스 toolGroup__btn--selected 추가 -->
+                            <button type="button" class="toolGroup__btn toolGroup__btn--selected"><span class="icon icon--view"></span></button>
+                        </div>
+                        <div class="toolGroup__item">
+                            <button type="button" class="toolGroup__btn"><span class="icon icon--viewOn"></span></button>
+                        </div>
+
+                        <div class="toolGroup__item">
+                            <button type="button" class="toolGroup__btn toolGroup__btn--selected"><span class="icon icon--grid"></span></button>
+                            <!-- [D] 활성화 시 클래스 toolGroup__subItem--active 추가 -->
+                            <div class="toolGroup__subItem toolGroup__subItem--active">
+                                <button type="button" class="toolGroup__btn"><span class="icon icon--grid"></span></button>
+                                <button type="button" class="toolGroup__btn toolGroup__btn--selected"><span class="icon icon--dots"></span></button>
+                            </div>
+                        </div>
+                        <div class="toolGroup__item">
+                            <button type="button" class="toolGroup__btn"><span class="icon icon--live"></span></button>
+                        </div>
+                        <div class="toolGroup__item">
+                            <button type="button" class="toolGroup__btn toolGroup__btn--selected"><span class="icon icon--zoom"></span></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- [D] rezise 시 width 값 조정 (default set :: min-width: 312px/ max-width: 426px) -->
+            <div class="mapSide" style="width: 350px;">
+                <button type="button" class="btn__dragSidebar"></button>
+                <div class="mapSide__search">
+                    <!-- [D] 검색결과 레이어 열때 .open 추가 -->
+                    <div class="common_round_searchbox3 dz_font">
+                        <input type="text" class="textinput" placeholder="사용자 이름 또는 내용으로 검색" title="검색어 입력">
+                        <div class="btnbox">
+                            <!-- [D] 검색 결과값이 있을 경우 검색어 지우기 버튼 출력 -->
+                            <button type="button" class="searchBox__btn"><span class="sp_icon icon_search02">검색</span></button>
+                            <button type="button" class="searchBox__btn"><span class="sp_icon icon_close">검색어 지우기</span></button>
+                            <span class="bar"></span>
+                            <button type="button" class="searchBox__btn"><span class="sp_icon icon_calendar">캘린더</span></button>
+                        </div>
+                        <div class="common_round_searchbox3_result">
+                            <ul>
+                                <!-- [D] 선택했을때 .selected 추가 -->
+                                <li class="selected">
+                                    <button type="button" class="resultitem">selectitem</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="resultitem">selectitem</button>
+                                </li>
+                                <li>
+                                    <button type="button" class="resultitem">selectitem</button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="mapSide__searchNext mapSide__searchNext--flex">
+                    <div class="mapSide__parti">
+                        <div class="partiBox__optArea">
+                            <button type="button" class="common_round_btn">취소</button>
+                            <!-- [D] 선택 시 클래스 selected 추가 -->
+                            <button type="button" class="common_round_btn selected">전체선택</button>
+                        </div>
+
+                        <div class="partiList">
+                            <ul class="partiList__list">
+                                <!-- [D] 선택 시 클래스 partiList__item--selected 추가 -->
+                                <li class="partiList__item partiList__item--selected">
+                                    <button type="button" class="profileBox">
+                                        <span class="sp_icon icon_round_check"></span>
+                                        <!-- [D] 온라인 상태일 시 클래스 thumbBox--online 추가 -->
+                                        <span class="thumbBox thumbBox--online">
+                                            <span class="thumbBox__item">
+                                                <span class="thumbBox__img" style="background-image: url(../common_img/img_sample.jpg);"></span>
+                                            </span>
+                                        </span>
+                                        <span class="profileInfo">
+                                            <span class="profileInfo__bundle">
+                                                <span class="profileInfo__item">
+                                                    <span class="profileInfo__user">
+                                                        <span class="blind">사용자 이름</span>
+                                                        <span class="profileInfo__name">(나)김<span class="emptext">희연</span>희연희연희연</span>
+                                                        <span class="blind">등록 시간</span>
+                                                        <span class="profileInfo__date">방금전방금전</span>
+                                                    </span>
+                                                </span>
+                                                <span class="label__master"><span class="icon icon--master"></span>마스터</span>
+                                            </span>
+                                            <span class="profileInfo__bundle">
+                                                <spaan class="profileInfo__item">
+                                                    <span class="profileInfo__user">
+                                                        <span class="blind">소속 부서</span>
+                                                        <span class="profileInfo__part">(주)KanKan&gt;플랫폼사업부문&gt;기획운영&gt;플랫폼사업부문&gt;기획운영&gt;플랫폼사업부문&gt;기획운영</span>
+                                                    </span>
+                                                </spaan>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </li>
+                                <li class="partiList__item">
+                                    <button type="button" class="profileBox">
+                                        <span class="sp_icon icon_round_check"></span>
+                                        <!-- [D] 온라인 상태일 시 클래스 thumbBox--online 추가 -->
+                                        <span class="thumbBox thumbBox--online">
+                                            <span class="thumbBox__item">
+                                                <span class="thumbBox__img" style="background-image: url(../common_img/img_sample.jpg);"></span>
+                                            </span>
+                                        </span>
+                                        <span class="profileInfo">
+                                            <span class="profileInfo__bundle">
+                                                <span class="profileInfo__item">
+                                                    <span class="profileInfo__user">
+                                                        <span class="blind">사용자 이름</span>
+                                                        <span class="profileInfo__name">(나)김<span class="emptext">희연</span></span>
+                                                        <span class="blind">등록 시간</span>
+                                                        <span class="profileInfo__date">방금전</span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="profileInfo__bundle">
+                                                <spaan class="profileInfo__item">
+                                                    <span class="profileInfo__user">
+                                                        <span class="blind">소속 부서</span>
+                                                        <span class="profileInfo__part">(주)KanKan&gt;플랫폼사업부문&gt;기획운영&gt;플랫폼사업부문&gt;기획운영&gt;플랫폼사업부문&gt;기획운영</span>
+                                                    </span>
+                                                </spaan>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </li>
+                                <li class="partiList__item">
+                                    <button type="button" class="profileBox">
+                                        <span class="sp_icon icon_round_check"></span>
+                                        <!-- [D] 온라인 상태일 시 클래스 thumbBox--online 추가 -->
+                                        <span class="thumbBox thumbBox--online">
+                                            <span class="thumbBox__item">
+                                                <span class="thumbBox__img" style="background-image: url(../common_img/img_sample.jpg);"></span>
+                                            </span>
+                                        </span>
+                                        <span class="profileInfo">
+                                            <span class="profileInfo__bundle">
+                                                <span class="profileInfo__item">
+                                                    <span class="profileInfo__user">
+                                                        <span class="blind">사용자 이름</span>
+                                                        <span class="profileInfo__name">(나)김<span class="emptext">희연</span></span>
+                                                        <span class="blind">등록 시간</span>
+                                                        <span class="profileInfo__date">방금전</span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="profileInfo__bundle">
+                                                <spaan class="profileInfo__item">
+                                                    <span class="profileInfo__user">
+                                                        <span class="blind">소속 부서</span>
+                                                        <span class="profileInfo__part">(주)KanKan&gt;플랫폼사업부문&gt;기획운영&gt;플랫폼사업부문&gt;기획운영&gt;플랫폼사업부문&gt;기획운영</span>
+                                                    </span>
+                                                </spaan>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </li>
+                                <li class="partiList__item">
+                                    <button type="button" class="profileBox">
+                                        <span class="sp_icon icon_round_check"></span>
+                                        <!-- [D] 온라인 상태일 시 클래스 thumbBox--online 추가 -->
+                                        <span class="thumbBox thumbBox--online">
+                                            <span class="thumbBox__item">
+                                                <span class="thumbBox__img" style="background-image: url(../common_img/img_sample.jpg);"></span>
+                                            </span>
+                                        </span>
+                                        <span class="profileInfo">
+                                            <span class="profileInfo__bundle">
+                                                <span class="profileInfo__item">
+                                                    <span class="profileInfo__user">
+                                                        <span class="blind">사용자 이름</span>
+                                                        <span class="profileInfo__name">(나)김<span class="emptext">희연</span></span>
+                                                        <span class="blind">등록 시간</span>
+                                                        <span class="profileInfo__date">방금전</span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="profileInfo__bundle">
+                                                <spaan class="profileInfo__item">
+                                                    <span class="profileInfo__user">
+                                                        <span class="blind">소속 부서</span>
+                                                        <span class="profileInfo__part">(주)KanKan&gt;플랫폼사업부문&gt;기획운영&gt;플랫폼사업부문&gt;기획운영&gt;플랫폼사업부문&gt;기획운영</span>
+                                                    </span>
+                                                </spaan>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </li>
+                                <li class="partiList__item">
+                                    <button type="button" class="profileBox">
+                                        <span class="sp_icon icon_round_check"></span>
+                                        <!-- [D] 온라인 상태일 시 클래스 thumbBox--online 추가 -->
+                                        <span class="thumbBox thumbBox--online">
+                                            <span class="thumbBox__item">
+                                                <span class="thumbBox__img" style="background-image: url(../common_img/img_sample.jpg);"></span>
+                                            </span>
+                                        </span>
+                                        <span class="profileInfo">
+                                            <span class="profileInfo__bundle">
+                                                <span class="profileInfo__item">
+                                                    <span class="profileInfo__user">
+                                                        <span class="blind">사용자 이름</span>
+                                                        <span class="profileInfo__name">(나)김<span class="emptext">희연</span></span>
+                                                        <span class="blind">등록 시간</span>
+                                                        <span class="profileInfo__date">방금전</span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="profileInfo__bundle">
+                                                <spaan class="profileInfo__item">
+                                                    <span class="profileInfo__user">
+                                                        <span class="blind">소속 부서</span>
+                                                        <span class="profileInfo__part">(주)KanKan&gt;플랫폼사업부문&gt;기획운영&gt;플랫폼사업부문&gt;기획운영&gt;플랫폼사업부문&gt;기획운영</span>
+                                                    </span>
+                                                </spaan>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </li>
+                                <li class="partiList__item">
+                                    <button type="button" class="profileBox">
+                                        <span class="sp_icon icon_round_check"></span>
+                                        <!-- [D] 온라인 상태일 시 클래스 thumbBox--online 추가 -->
+                                        <span class="thumbBox thumbBox--online">
+                                            <span class="thumbBox__item">
+                                                <span class="thumbBox__img" style="background-image: url(../common_img/img_sample.jpg);"></span>
+                                            </span>
+                                        </span>
+                                        <span class="profileInfo">
+                                            <span class="profileInfo__bundle">
+                                                <span class="profileInfo__item">
+                                                    <span class="profileInfo__user">
+                                                        <span class="blind">사용자 이름</span>
+                                                        <span class="profileInfo__name">(나)김<span class="emptext">희연</span></span>
+                                                        <span class="blind">등록 시간</span>
+                                                        <span class="profileInfo__date">방금전</span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="profileInfo__bundle">
+                                                <spaan class="profileInfo__item">
+                                                    <span class="profileInfo__user">
+                                                        <span class="blind">소속 부서</span>
+                                                        <span class="profileInfo__part">(주)KanKan&gt;플랫폼사업부문&gt;기획운영&gt;플랫폼사업부문&gt;기획운영&gt;플랫폼사업부문&gt;기획운영</span>
+                                                    </span>
+                                                </spaan>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </li>
+                                <!-- [D] 선택 시 클래스 partiList__item--selected 추가 -->
+                                <li class="partiList__item partiList__item--selected">
+                                    <button type="button" class="profileBox">
+                                        <span class="sp_icon icon_round_check"></span>
+                                        <!-- [D] 온라인 상태일 시 클래스 thumbBox--online 추가 -->
+                                        <span class="thumbBox thumbBox--online">
+                                            <span class="thumbBox__item">
+                                                <span class="thumbBox__img" style="background-image: url(../common_img/img_sample.jpg);"></span>
+                                            </span>
+                                        </span>
+                                        <span class="profileInfo">
+                                            <span class="profileInfo__bundle">
+                                                <span class="profileInfo__item">
+                                                    <span class="profileInfo__user">
+                                                        <span class="blind">사용자 이름</span>
+                                                        <span class="profileInfo__name">(나)김<span class="emptext">희연</span></span>
+                                                        <span class="blind">등록 시간</span>
+                                                        <span class="profileInfo__date">방금전</span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="profileInfo__bundle">
+                                                <spaan class="profileInfo__item">
+                                                    <span class="profileInfo__user">
+                                                        <span class="blind">소속 부서</span>
+                                                        <span class="profileInfo__part">(주)KanKan&gt;플랫폼사업부문&gt;기획운영&gt;플랫폼사업부문&gt;기획운영&gt;플랫폼사업부문&gt;기획운영</span>
+                                                    </span>
+                                                </spaan>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </li>
+                                <!-- [D] 선택 시 클래스 partiList__item--selected 추가 -->
+                                <li class="partiList__item partiList__item--selected">
+                                    <button type="button" class="profileBox">
+                                        <span class="sp_icon icon_round_check"></span>
+                                        <!-- [D] 온라인 상태일 시 클래스 thumbBox--online 추가 -->
+                                        <span class="thumbBox thumbBox--online">
+                                            <span class="thumbBox__item">
+                                                <span class="thumbBox__img" style="background-image: url(../common_img/img_sample.jpg);"></span>
+                                            </span>
+                                        </span>
+                                        <span class="profileInfo">
+                                            <span class="profileInfo__bundle">
+                                                <span class="profileInfo__item">
+                                                    <span class="profileInfo__user">
+                                                        <span class="blind">사용자 이름</span>
+                                                        <span class="profileInfo__name">(나)김<span class="emptext">희연</span></span>
+                                                        <span class="blind">등록 시간</span>
+                                                        <span class="profileInfo__date">방금전</span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="profileInfo__bundle">
+                                                <spaan class="profileInfo__item">
+                                                    <span class="profileInfo__user">
+                                                        <span class="blind">소속 부서</span>
+                                                        <span class="profileInfo__part">(주)KanKan&gt;플랫폼사업부문&gt;기획운영&gt;플랫폼사업부문&gt;기획운영&gt;플랫폼사업부문&gt;기획운영</span>
+                                                    </span>
+                                                </spaan>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </li>
+                                <!-- [D] 선택 시 클래스 partiList__item--selected 추가 -->
+                                <li class="partiList__item partiList__item--selected">
+                                    <button type="button" class="profileBox">
+                                        <span class="sp_icon icon_round_check"></span>
+                                        <!-- [D] 온라인 상태일 시 클래스 thumbBox--online 추가 -->
+                                        <span class="thumbBox thumbBox--online">
+                                            <span class="thumbBox__item">
+                                                <span class="thumbBox__img" style="background-image: url(../common_img/img_sample.jpg);"></span>
+                                            </span>
+                                        </span>
+                                        <span class="profileInfo">
+                                            <span class="profileInfo__bundle">
+                                                <span class="profileInfo__item">
+                                                    <span class="profileInfo__user">
+                                                        <span class="blind">사용자 이름</span>
+                                                        <span class="profileInfo__name">(나)김<span class="emptext">희연</span></span>
+                                                        <span class="blind">등록 시간</span>
+                                                        <span class="profileInfo__date">방금전</span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="profileInfo__bundle">
+                                                <spaan class="profileInfo__item">
+                                                    <span class="profileInfo__user">
+                                                        <span class="blind">소속 부서</span>
+                                                        <span class="profileInfo__part">(주)KanKan&gt;플랫폼사업부문&gt;기획운영&gt;플랫폼사업부문&gt;기획운영&gt;플랫폼사업부문&gt;기획운영</span>
+                                                    </span>
+                                                </spaan>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </li>
+                                <li class="partiList__item">
+                                    <button type="button" class="profileBox">
+                                        <span class="sp_icon icon_round_check"></span>
+                                        <!-- [D] 온라인 상태일 시 클래스 thumbBox--online 추가 -->
+                                        <span class="thumbBox thumbBox--online">
+                                            <span class="thumbBox__item">
+                                                <span class="thumbBox__img" style="background-image: url(../common_img/img_sample.jpg);"></span>
+                                            </span>
+                                        </span>
+                                        <span class="profileInfo">
+                                            <span class="profileInfo__bundle">
+                                                <span class="profileInfo__item">
+                                                    <span class="profileInfo__user">
+                                                        <span class="blind">사용자 이름</span>
+                                                        <span class="profileInfo__name">(나)김<span class="emptext">희연</span></span>
+                                                        <span class="blind">등록 시간</span>
+                                                        <span class="profileInfo__date">방금전</span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="profileInfo__bundle">
+                                                <spaan class="profileInfo__item">
+                                                    <span class="profileInfo__user">
+                                                        <span class="blind">소속 부서</span>
+                                                        <span class="profileInfo__part">(주)KanKan&gt;플랫폼사업부문&gt;기획운영&gt;플랫폼사업부문&gt;기획운영&gt;플랫폼사업부문&gt;기획운영</span>
+                                                    </span>
+                                                </spaan>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </li>
+                                <li class="partiList__item">
+                                    <button type="button" class="profileBox">
+                                        <span class="sp_icon icon_round_check"></span>
+                                        <!-- [D] 온라인 상태일 시 클래스 thumbBox--online 추가 -->
+                                        <span class="thumbBox thumbBox--online">
+                                            <span class="thumbBox__item">
+                                                <span class="thumbBox__img" style="background-image: url(../common_img/img_sample.jpg);"></span>
+                                            </span>
+                                        </span>
+                                        <span class="profileInfo">
+                                            <span class="profileInfo__bundle">
+                                                <span class="profileInfo__item">
+                                                    <span class="profileInfo__user">
+                                                        <span class="blind">사용자 이름</span>
+                                                        <span class="profileInfo__name">(나)김<span class="emptext">희연</span></span>
+                                                        <span class="blind">등록 시간</span>
+                                                        <span class="profileInfo__date">방금전</span>
+                                                    </span>
+                                                </span>
+                                            </span>
+                                            <span class="profileInfo__bundle">
+                                                <spaan class="profileInfo__item">
+                                                    <span class="profileInfo__user">
+                                                        <span class="blind">소속 부서</span>
+                                                        <span class="profileInfo__part">(주)KanKan&gt;플랫폼사업부문&gt;기획운영&gt;플랫폼사업부문&gt;기획운영&gt;플랫폼사업부문&gt;기획운영</span>
+                                                    </span>
+                                                </spaan>
+                                            </span>
+                                        </span>
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="mapSide__actionbar">
+                        <div class="mapSide__actionbarItem">
+                            <span class="num">8건</span>선택됨
+                        </div>
+                        <div class="mapSide__actionbarItem">
+                            <button type="button" class="common_round_btn">내보내기</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- [D] 디자인 확인 목적으로 생성한 js입니다. 개발시 삭제 부탁드립니다 -->
+<script src="../common_js/jquery-latest.min.js"></script>
+<script src="../common_js/jquery.include.js"></script>
+</body>
+</html>
+

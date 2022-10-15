@@ -1,0 +1,121 @@
+// :::::: Flex :::::::
+$flexMap: ( // key : value
+        flex: flex,
+        inline-flex: inline-flex,
+        flex-s: flex-start,
+        flex-e: flex-end,
+        space-b: space-between,
+        space-a: space-around,
+        space-e: space-evenly,
+        stretch: stretch,
+        left: left,
+        right: right,
+        center: center,
+        end: end,
+        normal: normal,
+        inherit: inherit,
+        initial: initial,
+        revert: revert,
+        start: start,
+        unset: unset,
+);
+@function _get-flex-value($key) { // 입력한 키값($key)를 받아서
+  @return map-get($flexMap, $key); // @return 리턴한다. 배열에서 입력한 키값에 맞는 값을.
+}
+@mixin flex($flex : flex, $jc : normal, $ai : normal) { // : 를 붙히고 값을 써준 것은 default 값
+  display: _get-flex-value($flex);
+  justify-content: _get-flex-value($jc);
+  align-items: _get-flex-value($ai);
+}
+
+// ::::::: Sprite :::::::
+@mixin spmdm($spWidth : 0, $spHeight : 0, $posX : 0, $posY : 0, $url : $spUrl){
+  display: inline-block;
+  vertical-align: top;
+  width: $spWidth;
+  height: $spHeight;
+  background: url($url) $posX $posY no-repeat;
+  background-size: $spSize;
+  line-height: 100em;
+  color: transparent;
+  overflow: hidden;
+}
+@mixin spbg($spWidth : 0, $spHeight : 0, $posX : 0, $posY : 0, $url : $spUrl) {
+  width: $spWidth;
+  height: $spHeight;
+  background: url($url) $posX $posY no-repeat;
+  background-size: $spSize;
+}
+@mixin spicon($spWidth : 0, $spHeight : 0, $posX : 0, $posY : 0, $url : $spIcon) {
+  width: $spWidth;
+  height: $spHeight;
+  background: url($url) $posX $posY no-repeat;
+  background-size: $spIconSize;
+}
+
+@mixin absolSp($spWidth : 0, $spHeight : 0, $posX : 0, $posY : 0, $url : $spUrl) {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -($spHeight/2);
+  margin-left: -($spWidth/2);
+  width: $spWidth;
+  height: $spHeight;
+  background: url($url) $posX $posY no-repeat;
+  background-size: $spSize;
+}
+
+// ::::::: Absolute Center :::::::
+@mixin absolCnt {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+// ::::::: Blind :::::::
+@mixin blind {
+  overflow: hidden !important;
+  position: absolute !important;
+  z-index: -1;
+  width: 1px !important;
+  height: 1px !important;
+  border: 0;
+  clip: rect(1px 1px 1px 1px) !important;
+  clip-path: inset(50%);
+}
+@mixin blind-inline {
+  overflow: hidden !important;
+  display: inline-block;
+  position: relative !important;
+  z-index: -1;
+  width: 1px !important;
+  height: 1px !important;
+  border: 0;
+  clip: rect(1px 1px 1px 1px) !important;
+  clip-path: inset(50%);
+}
+
+// ::::::: Clearfix :::::::
+@mixin clearfix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+// ::::::: Ellipsis :::::::
+@mixin ellipsis {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+@mixin ellipsis-multi($numLines, $lineHeight) {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: $numLines;
+  height: $numLines * $lineHeight;
+  line-height: $lineHeight;
+  overflow: hidden;
+}
