@@ -22,123 +22,30 @@
 <body>
 <div class="container">
     <section>
-        <h1>Gauge Chart</h1>
-        <p class="blind">참고 사이트 : https://webdesign.tutsplus.com/tutorials/how-to-build-a-css-only-semi-circle-donut-chart--cms-26997</p>
-        <div style="border:1px solid red;width:450px;height:225px;">
-            <div class="chart_box">
-                <div class="chart-skills">
-                    <!-- 해당 단계까지 클래스 active 추가 -->
-                    <div class="item_box_1 active">
-                        <span class="title">부도</span>
-                        <div class="per"></div>
-                    </div>
-                    <div class="item_box_2 active">
-                        <span class="title">휴폐업</span>
-                        <div class="per"></div>
-                    </div>
-                    <div class="item_box_3 active">
-                        <span class="title">회수의문</span>
-                        <div class="per"></div>
-                    </div>
-                    <div class="item_box_4 active">
-                        <span class="title">위험</span>
-                        <div class="per"></div>
-                    </div>
-                    <div class="item_box_5 active">
-                        <span class="title">경보</span>
-                        <div class="per"></div>
-                    </div>
-                    <div class="item_box_6">
-                        <span class="title">주의</span>
-                        <div class="per"></div>
-                    </div>
-                    <div class="item_box_7">
-                        <span class="title">관찰</span>
-                        <div class="per"></div>
-                    </div>
-                    <div class="item_box_8">
-                        <span class="title">유보</span>
-                        <div class="per"></div>
-                    </div>
-                    <div class="item_box_9">
-                        <span class="title">정상</span>
-                        <div class="per"></div>
-                    </div>
-                </div>
-                <!-- step1 ~ step9 클래스 추가 -->
-                <div class="arrow_box step5">
-                    <img src="img/arrow.png" alt="">
-                    <span class="blind">경보 단계</span>
-                </div>
-                <div class="gradation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
-        </div>
-        <br><br>
-        <div style="border:1px solid red;width:190px;height:95px;">
-            <div class="chart_box type_small">
-                <div class="chart-skills">
-                    <!-- 해당 단계까지 클래스 active 추가 -->
-                    <div class="item_box_1 active">
-                        <span class="blind">부도</span>
-                        <div class="per"></div>
-                    </div>
-                    <div class="item_box_2 active">
-                        <span class="blind">휴폐업</span>
-                        <div class="per"></div>
-                    </div>
-                    <div class="item_box_3 active">
-                        <span class="blind">회수의문</span>
-                        <div class="per"></div>
-                    </div>
-                    <div class="item_box_4 active">
-                        <span class="blind">위험</span>
-                        <div class="per"></div>
-                    </div>
-                    <div class="item_box_5 active">
-                        <span class="blind">경보</span>
-                        <div class="per"></div>
-                    </div>
-                    <div class="item_box_6 active">
-                        <span class="blind">주의</span>
-                        <div class="per"></div>
-                    </div>
-                    <div class="item_box_7 active">
-                        <span class="blind">관찰</span>
-                        <div class="per"></div>
-                    </div>
-                    <div class="item_box_8 active">
-                        <span class="blind">유보</span>
-                        <div class="per"></div>
-                    </div>
-                    <div class="item_box_9">
-                        <span class="blind">정상</span>
-                        <div class="per"></div>
-                    </div>
-                </div>
-                <!-- step1 ~ step9 클래스 추가 -->
-                <div class="arrow_box step8">
-                    <img src="img/arrow.png" alt="">
-                    <span class="blind">경보 단계</span>
-                </div>
-                <div class="gradation">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
+        <h1>Star Rating</h1>
+        <div class="starpoint_wrap">
+            <div class="starpoint_box">
+                <label for="starpoint_1" class="label_star" title="0.5"><span class="blind">0.5점</span></label>
+                <label for="starpoint_2" class="label_star" title="1"><span class="blind">1점</span></label>
+                <label for="starpoint_3" class="label_star" title="1.5"><span class="blind">1.5점</span></label>
+                <label for="starpoint_4" class="label_star" title="2"><span class="blind">2점</span></label>
+                <label for="starpoint_5" class="label_star" title="2.5"><span class="blind">2.5점</span></label>
+                <label for="starpoint_6" class="label_star" title="3"><span class="blind">3점</span></label>
+                <label for="starpoint_7" class="label_star" title="3.5"><span class="blind">3.5점</span></label>
+                <label for="starpoint_8" class="label_star" title="4"><span class="blind">4점</span></label>
+                <label for="starpoint_9" class="label_star" title="4.5"><span class="blind">4.5점</span></label>
+                <label for="starpoint_10" class="label_star" title="5"><span class="blind">5점</span></label>
+                <input type="radio" name="starpoint" id="starpoint_1" class="star_radio">
+                <input type="radio" name="starpoint" id="starpoint_2" class="star_radio">
+                <input type="radio" name="starpoint" id="starpoint_3" class="star_radio">
+                <input type="radio" name="starpoint" id="starpoint_4" class="star_radio">
+                <input type="radio" name="starpoint" id="starpoint_5" class="star_radio">
+                <input type="radio" name="starpoint" id="starpoint_6" class="star_radio">
+                <input type="radio" name="starpoint" id="starpoint_7" class="star_radio">
+                <input type="radio" name="starpoint" id="starpoint_8" class="star_radio">
+                <input type="radio" name="starpoint" id="starpoint_9" class="star_radio">
+                <input type="radio" name="starpoint" id="starpoint_10" class="star_radio">
+                <span class="starpoint_bg"></span>
             </div>
         </div>
     </section>
@@ -256,6 +163,127 @@
                         <button type="button" class="graph"></button>
                     </li>
                 </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>Gauge Chart</h1>
+        <p class="blind">참고 사이트 : https://webdesign.tutsplus.com/tutorials/how-to-build-a-css-only-semi-circle-donut-chart--cms-26997</p>
+        <div style="border:1px solid red;width:450px;height:225px;">
+            <div class="chart_box">
+                <div class="chart-skills">
+                    <!-- 해당 단계까지 클래스 active 추가 -->
+                    <div class="item_box_1 active">
+                        <span class="title">부도</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_2 active">
+                        <span class="title">휴폐업</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_3 active">
+                        <span class="title">회수의문</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_4 active">
+                        <span class="title">위험</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_5 active">
+                        <span class="title">경보</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_6">
+                        <span class="title">주의</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_7">
+                        <span class="title">관찰</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_8">
+                        <span class="title">유보</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_9">
+                        <span class="title">정상</span>
+                        <div class="per"></div>
+                    </div>
+                </div>
+                <!-- step1 ~ step9 클래스 추가 -->
+                <div class="arrow_box step5">
+                    <img src="img/arrow.png" alt="">
+                    <span class="blind">경보 단계</span>
+                </div>
+                <div class="gradation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div style="border:1px solid red;width:190px;height:95px;">
+            <div class="chart_box type_small">
+                <div class="chart-skills">
+                    <!-- 해당 단계까지 클래스 active 추가 -->
+                    <div class="item_box_1 active">
+                        <span class="blind">부도</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_2 active">
+                        <span class="blind">휴폐업</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_3 active">
+                        <span class="blind">회수의문</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_4 active">
+                        <span class="blind">위험</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_5 active">
+                        <span class="blind">경보</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_6 active">
+                        <span class="blind">주의</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_7 active">
+                        <span class="blind">관찰</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_8 active">
+                        <span class="blind">유보</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_9">
+                        <span class="blind">정상</span>
+                        <div class="per"></div>
+                    </div>
+                </div>
+                <!-- step1 ~ step9 클래스 추가 -->
+                <div class="arrow_box step8">
+                    <img src="img/arrow.png" alt="">
+                    <span class="blind">경보 단계</span>
+                </div>
+                <div class="gradation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
             </div>
         </div>
     </section>
