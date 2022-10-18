@@ -1,0 +1,1001 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="canonical" href="https://hsecode.github.io/index.html">
+    <title>etc elements</title>
+    <link rel="stylesheet" href="css/chart.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Do+Hyeon&display=swap" rel="stylesheet">
+
+    <!--[if (lte IE 9)]>
+    <script src="/js/IE9.js" type='text/javascript'></script>
+    <![endif]-->
+
+    <!--[if (lte IE 8)]>
+    <script src="/js/html5shiv.min.js" type='text/javascript'></script>
+    <![endif]-->
+</head>
+<body>
+<div class="container">
+    <section>
+        <h1>Gauge Chart</h1>
+        <p class="blind">참고 사이트 : https://webdesign.tutsplus.com/tutorials/how-to-build-a-css-only-semi-circle-donut-chart--cms-26997</p>
+        <div style="border:1px solid red;width:450px;height:225px;">
+            <div class="chart_box">
+                <div class="chart-skills">
+                    <!-- 해당 단계까지 클래스 active 추가 -->
+                    <div class="item_box_1 active">
+                        <span class="title">부도</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_2 active">
+                        <span class="title">휴폐업</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_3 active">
+                        <span class="title">회수의문</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_4 active">
+                        <span class="title">위험</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_5 active">
+                        <span class="title">경보</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_6">
+                        <span class="title">주의</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_7">
+                        <span class="title">관찰</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_8">
+                        <span class="title">유보</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_9">
+                        <span class="title">정상</span>
+                        <div class="per"></div>
+                    </div>
+                </div>
+                <!-- step1 ~ step9 클래스 추가 -->
+                <div class="arrow_box step5">
+                    <img src="images/lab/arrow.png" alt="">
+                    <span class="blind">경보 단계</span>
+                </div>
+                <div class="gradation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <div style="border:1px solid red;width:190px;height:95px;">
+            <div class="chart_box type_small">
+                <div class="chart-skills">
+                    <!-- 해당 단계까지 클래스 active 추가 -->
+                    <div class="item_box_1 active">
+                        <span class="blind">부도</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_2 active">
+                        <span class="blind">휴폐업</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_3 active">
+                        <span class="blind">회수의문</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_4 active">
+                        <span class="blind">위험</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_5 active">
+                        <span class="blind">경보</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_6 active">
+                        <span class="blind">주의</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_7 active">
+                        <span class="blind">관찰</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_8 active">
+                        <span class="blind">유보</span>
+                        <div class="per"></div>
+                    </div>
+                    <div class="item_box_9">
+                        <span class="blind">정상</span>
+                        <div class="per"></div>
+                    </div>
+                </div>
+                <!-- step1 ~ step9 클래스 추가 -->
+                <div class="arrow_box step8">
+                    <img src="images/lab/arrow.png" alt="">
+                    <span class="blind">경보 단계</span>
+                </div>
+                <div class="gradation">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h1>Bar Chart - horizontal</h1>
+        <div class="stats_graph_box">
+            <div class="graph">
+            <!-- 비율에 따라 width 값 조정 -->
+                <div class="bar green" style="width:40%;">
+                    <dl class="desc">
+                        <dt>Data 1</dt>
+                        <dd><em>50</em>개</dd>
+                    </dl>
+                </div>
+                <div class="bar pink" style="width:10%">
+                    <dl class="desc">
+                        <dt>Data 2</dt>
+                        <dd><em>8</em>개</dd>
+                    </dl>
+                </div>
+                <div class="bar clear" style="width:30%">
+                    <dl class="desc">
+                        <dt>Data etc.</dt>
+                        <dd><em>72</em>개</dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- 위치시킬 값에 따라 left 값 조정 -->
+            <dl class="fixed_data" style="left:75%;">
+                <div class="item">
+                    <dt>data data</dt>
+                    <dd><em>21</em>개</dd>
+                </div>
+                <div class="item">
+                    <dt>data data data</dt>
+                    <dd><em>190</em>개</dd>
+                </div>
+            </dl>
+        </div>
+    </section>
+    <section>
+        <h1>Bar Chart - vertical</h1>
+        <div class="vertical_chart_box">
+            <div class="chart_inbox">
+                <ul class="axis_y">
+                    <li class="item">0<span class="blind">시간</span></li>
+                    <li class="item">3<span class="blind">시간</span></li>
+                    <li class="item">6<span class="blind">시간</span></li>
+                    <li class="item">9<span class="blind">시간</span></li>
+                    <li class="item">12<span class="blind">시간</span></li>
+                </ul>
+                <ul class="axis_x">
+                    <li class="item">
+                        <div class="text_box">
+                            <strong class="day">17(월)</strong>
+                            <span class="time">00시간</span>
+                        </div>
+                        <button type="button" class="graph">
+                            <span class="time data1" style="height:80%;"><span class="blind">data 타입 1</span></span>
+                        </button>
+                    </li>
+                    <li class="item">
+                        <div class="text_box">
+                            <strong class="day">18(화)</strong>
+                            <span class="time">00시간</span>
+                        </div>
+                        <button type="button" class="graph">
+                            <span class="time data1" style="height:50%;"><span class="blind">data 타입 1</span></span>
+                            <span class="time data2" style="height:20%;"><span class="blind">data 타입 2</span></span>
+                            <span class="time data3" style="height:10%;"><span class="blind">data 타입 3</span></span>
+                        </button>
+                    </li>
+                    <li class="item">
+                        <div class="text_box">
+                            <strong class="day">19(수)</strong>
+                            <span class="time">00시간</span>
+                        </div>
+                        <button type="button" class="graph">
+                            <span class="time data3" style="height:100%;"><span class="blind">data 타입 3</span></span>
+                        </button>
+                    </li>
+                    <li class="item">
+                        <div class="text_box">
+                            <strong class="day">20(목)</strong>
+                            <span class="time">00시간</span>
+                        </div>
+                        <button type="button" class="graph">
+                            <span class="time data1" style="height:100%;"><span class="blind">data 타입 1</span></span>
+                        </button>
+                    </li>
+                    <li class="item">
+                        <div class="text_box">
+                            <strong class="day">21(금)</strong>
+                            <span class="time">00시간</span>
+                        </div>
+                        <button type="button" class="graph">
+                            <span class="time data1" style="height:40%;"><span class="blind">data 타입 1</span></span>
+                            <span class="time data3" style="height:40%;"><span class="blind">data 타입 3</span></span>
+                        </button>
+                    </li>
+                    <li class="item">
+                        <div class="text_box">
+                            <strong class="day sat">22(토)</strong>
+                            <span class="time">휴일</span>
+                        </div>
+                        <button type="button" class="graph">
+                            <span class="time data2" style="height:20%;"><span class="blind">data 타입 2</span></span>
+                        </button>
+                    </li>
+                    <li class="item">
+                        <div class="text_box">
+                            <strong class="day sun">23(일)</strong>
+                            <span class="time">휴일</span>
+                        </div>
+                        <button type="button" class="graph"></button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <!--<section>
+        <div class="basic_chart_box type_scroll">
+            <div class="drawing_table_wrap">
+                <div class="drawing_table_box">
+                    <table class="bg_table">
+                        <colgroup>
+                            <col style="width:42%">
+                            <col style="width:25%">
+                            <col style="width:33%">
+                        </colgroup>
+                        <tbody>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="building_container">
+                    <div class="building_section type1">
+                        <div class="filter_btn_wrap">
+                            <strong class="title">본관</strong>
+                            <div class="filter_btn_box">
+                                <button type="button" class="btn_filter on">총<span class="num">9,999</span></button>
+                                <button type="button" class="btn_filter">남자<span class="num">9,999</span></button>
+                                <button type="button" class="btn_filter">여자<span class="num">9,999</span></button>
+                                <button type="button" class="btn_filter">공용<span class="num">9,999</span></button>
+                            </div>
+                        </div>
+                        <div class="building_wrap">
+                            <div class="floor_box">
+                                <span class="floor">1<span class="blind">층</span></span>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">2<span class="blind">층</span></span>
+                                <div class="item on">
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                </div>
+                                <div class="item on">
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                </div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">3<span class="blind">층</span></span>
+                                <div class="item on">
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                </div>
+                                <div class="item on">
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                </div>
+                                <div class="item on"></div>
+                                <div class="item on"></div>
+                                <div class="item on"></div>
+                                <div class="item on">
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                </div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">5<span class="blind">층</span></span>
+                                <div class="item on">
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                </div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">6<span class="blind">층</span></span>
+                                <div class="item on">
+                                    &lt;!&ndash; tooltip 케이스 &ndash;&gt;
+                                    <div class="tooltip_box">
+                                        <div class="bed blue"></div>
+                                        <div class="chart_tooltip">
+                                            <div class="row_item">
+                                                <span class="label_bed"><span class="title">공용</span>특실</span>
+                                                <span class="num">16E-11</span>
+                                            </div>
+                                            <div class="row_item">
+                                                <span class="label_bed pink"><span class="title">여자</span>특실</span>
+                                                <span class="num">16E-11</span>
+                                            </div>
+                                            <div class="row_item">
+                                                <span class="label_bed blue"><span class="title">남자</span>6인실</span>
+                                                <span class="num">16E-11</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                </div>
+                                <div class="item on">
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                </div>
+                                <div class="item on">
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    &lt;!&ndash; tooltip 케이스 &ndash;&gt;
+                                    <div class="tooltip_box">
+                                        <button type="button" class="btn_more"><span class="icon_more"><span class="blind">더보기</span></span></button>
+                                        <div class="chart_tooltip more">
+                                            <div class="row_item">
+                                                <span class="label_bed"><span class="title">공용</span>특실</span>
+                                                <span class="num">16E-11</span>
+                                                <strong class="num">2개</strong>
+                                            </div>
+                                            <div class="row_item">
+                                                <span class="label_bed pink"><span class="title">여자</span>특실</span>
+                                                <span class="num">16E-11</span>
+                                                <strong class="num">00개</strong>
+                                            </div>
+                                            <div class="row_item">
+                                                <span class="label_bed blue"><span class="title">남자</span>6인실</span>
+                                                <span class="num">16E-11</span>
+                                                <strong class="num">2개</strong>
+                                            </div>
+                                            <div class="row_item">
+                                                <span class="label_bed"><span class="title">공용</span>특실</span>
+                                                <span class="num">16E-11</span>
+                                                <strong class="num">2개</strong>
+                                            </div>
+                                            <div class="row_item">
+                                                <span class="label_bed pink"><span class="title">여자</span>특실</span>
+                                                <span class="num">16E-11</span>
+                                                <strong class="num">00개</strong>
+                                            </div>
+                                            <div class="row_item">
+                                                <span class="label_bed blue"><span class="title">남자</span>6인실</span>
+                                                <span class="num">16E-11</span>
+                                                <strong class="num">2개</strong>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item on">
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                </div>
+                                <div class="item on">
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                </div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">7<span class="blind">층</span></span>
+                                <div class="item on"></div>
+                                <div class="item on"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">8<span class="blind">층</span></span>
+                                <div class="item on"></div>
+                                <div class="item on"></div>
+                                <div class="item on"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">9<span class="blind">층</span></span>
+                                <div class="item"></div>
+                                <div class="item on"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">10<span class="blind">층</span></span>
+                                <div class="item on"></div>
+                                <div class="item on"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">11<span class="blind">층</span></span>
+                                <div class="item on"></div>
+                                <div class="item on"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">12<span class="blind">층</span></span>
+                                <div class="item on"></div>
+                                <div class="item on"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">13<span class="blind">층</span></span>
+                                <div class="item on"></div>
+                                <div class="item on"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">14<span class="blind">층</span></span>
+                                <div class="item on"></div>
+                                <div class="item on"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">15<span class="blind">층</span></span>
+                                <div class="item on"></div>
+                                <div class="item on"></div>
+                                <div class="item on"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">16<span class="blind">층</span></span>
+                                <div class="item on"></div>
+                                <div class="item on"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">17<span class="blind">층</span></span>
+                                <div class="item on">
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                </div>
+                                <div class="item on"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">18<span class="blind">층</span></span>
+                                <div class="item on">
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                </div>
+                                <div class="item on">
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                </div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">19<span class="blind">층</span></span>
+                                <div class="item on">
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                </div>
+                                <div class="item on"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box top_floor">
+                                <span class="floor">층</span>
+                                <div class="item"><span class="tit">동</span></div>
+                                <div class="item"><span class="tit">서</span></div>
+                                <div class="item"><span class="deco_item"></span></div>
+                                <div class="item"><span class="deco_item"></span></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="building_section type2">
+                        <div class="filter_btn_wrap">
+                            <strong class="title">별관</strong>
+                            <div class="filter_btn_box">
+                                <button type="button" class="btn_filter">총<span class="num">9,999</span></button>
+                                <button type="button" class="btn_filter on">남자<span class="num">9,999</span></button>
+                                <button type="button" class="btn_filter">여자<span class="num">9,999</span></button>
+                                <button type="button" class="btn_filter">공용<span class="num">9,999</span></button>
+                            </div>
+                        </div>
+                        <div class="building_wrap">
+                            <div class="floor_box">
+                                <span class="floor">1<span class="blind">층</span></span>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">2<span class="blind">층</span></span>
+                                <div class="item on">
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box">
+                                        <div class="bed blue"></div>
+                                        <div class="chart_tooltip">
+                                            <div class="row_item">
+                                                <span class="label_bed"><span class="title">공용</span>특실</span>
+                                                <span class="num">16E-11</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                </div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">3<span class="blind">층</span></span>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">5<span class="blind">층</span></span>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item on">
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                </div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">6<span class="blind">층</span></span>
+                                <div class="item on">
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                </div>
+                                <div class="item on">
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                </div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">7<span class="blind">층</span></span>
+                                <div class="item on">
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                </div>
+                                <div class="item on">
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                </div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">8<span class="blind">층</span></span>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box top_floor">
+                                <span class="floor">층</span>
+                                <div class="item"><span class="tit">동</span></div>
+                                <div class="item"><span class="tit">서</span></div>
+                                <div class="item"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="building_section type3">
+                        <div class="filter_btn_wrap">
+                            <strong class="title">암병원</strong>
+                            <div class="filter_btn_box">
+                                <button type="button" class="btn_filter">총<span class="num">9,999</span></button>
+                                <button type="button" class="btn_filter">남자<span class="num">9,999</span></button>
+                                <button type="button" class="btn_filter">여자<span class="num">9,999</span></button>
+                                <button type="button" class="btn_filter on">공용<span class="num">9,999</span></button>
+                            </div>
+                        </div>
+                        <div class="building_wrap">
+                            <div class="floor_box">
+                                <span class="floor">1<span class="blind">층</span></span>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">2<span class="blind">층</span></span>
+                                <div class="item"></div>
+                                <div class="item on">
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                </div>
+                                <div class="item on">
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                    <div class="tooltip_box"><div class="bed purple"></div></div>
+                                </div>
+                                <div class="item on">
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                    <div class="tooltip_box"><div class="bed green"></div></div>
+                                </div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">3<span class="blind">층</span></span>
+                                <div class="item on"></div>
+                                <div class="item"></div>
+                                <div class="item on"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">5<span class="blind">층</span></span>
+                                <div class="item on"></div>
+                                <div class="item on"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">6<span class="blind">층</span></span>
+                                <div class="item on"></div>
+                                <div class="item on"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">7<span class="blind">층</span></span>
+                                <div class="item on"></div>
+                                <div class="item on"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">8<span class="blind">층</span></span>
+                                <div class="item on"></div>
+                                <div class="item on"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">9<span class="blind">층</span></span>
+                                <div class="item on"></div>
+                                <div class="item on"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">10<span class="blind">층</span></span>
+                                <div class="item on"></div>
+                                <div class="item on"></div>
+                                <div class="item"></div>
+                            </div>
+                            <div class="floor_box">
+                                <span class="floor">11<span class="blind">층</span></span>
+                                <div class="item on"></div>
+                                <div class="item on"></div>
+                                <div class="item on">
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                    <div class="tooltip_box"><div class="bed blue"></div></div>
+                                </div>
+                            </div>
+                            <div class="floor_box top_floor">
+                                <span class="floor">층</span>
+                                <div class="item"><span class="tit">동</span></div>
+                                <div class="item"><span class="tit">서</span></div>
+                                <div class="item"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>-->
+</div>
+</body>
+</html>
