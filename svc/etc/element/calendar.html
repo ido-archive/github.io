@@ -1,10 +1,291 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="canonical" href="https://hsecode.github.io/index.html">
+    <title>etc elements</title>
+    <link rel="stylesheet" href="css/calendar.css">
 </head>
 <body>
+<h2>주간 캘린더</h2>
+<div class="calendar_content_wrap">
+    <div class="calendar_content_box weekly">
+        <div class="week">
+            <div class="day_box">
+                <div class="date"><span>11(월)</span></div>
+                <div class="day_con">
+                    <ul class="label_list">
+                        <!-- label_time : 클릭기능 없을 시 span 태그 사용 -->
+                        <li><span class="label_time blue">08:00</span></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="day_box">
+                <div class="date"><span>12(화)</span></div>
+                <div class="day_con">
+                    <ul class="label_list">
+                        <li><a href="#" class="label_time blue">08:00</a></li>
+                        <li><a href="#" class="label_time teal">06:00</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="day_box">
+                <div class="date"><span>13(수)</span></div>
+                <div class="day_con">
+                    <ul class="label_list">
+                        <li><a href="#" class="label_time blue">08:00</a></li>
+                        <li><a href="#" class="label_time teal">06:00</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="day_box">
+                <div class="date"><span>14(목)</span></div>
+                <div class="day_con">
+                    <ul class="label_list">
+                        <li><a href="#" class="label_time blue">08:00</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="day_box">
+                <div class="date"><span>15(금)</span></div>
+                <div class="day_con">
+                    <ul class="label_list">
+                        <li><a href="#" class="label_time blue">08:00</a></li>
+                        <li><a href="#" class="label_time yellow">오후휴가</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="day_box sat">
+                <div class="date"><span>16(토)</span></div>
+                <div class="day_con">
+                </div>
+            </div>
+            <div class="day_box sun">
+                <div class="date"><span>17(일)</span></div>
+                <div class="day_con">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<h2>월간캘린더</h2>
+<div class="calendar_content_wrap">
+    <div class="calendar_content_box">
+        <div class="week_header">
+            <div class="day sun"><span>일</span></div>
+            <div class="day"><span>월</span></div>
+            <div class="day"><span>화</span></div>
+            <div class="day"><span>수</span></div>
+            <div class="day"><span>목</span></div>
+            <div class="day"><span>금</span></div>
+            <div class="day sat"><span>토</span></div>
+        </div>
+        <div class="week">
+            <!-- day_box 클릭요소로 변경될 경우 div -> a태그로 변경 -->
+            <!-- 활성화 시 클래스 active 추가 -->
+            <a href="#" class="day_box sun prev_month">
+                <div class="date"><span>29</span></div>
+                <div class="day_con"></div>
+            </a>
+            <a href="#" class="day_box prev_month">
+                <div class="date"><span>30</span></div>
+                <div class="day_con"></div>
+            </a>
+            <a href="#" class="day_box prev_month">
+                <div class="date"><span>31</span></div>
+                <div class="day_con">
+                    <div class="attend_ticket">
+                        <strong class="time">8시간</strong>
+                        <span class="term">09:00 ~ 18:00</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="day_box">
+                <div class="date"><span>1</span></div>
+                <div class="day_con">
+                    <div class="attend_ticket abnormal">
+                        <strong class="time">7시간 30분</strong>
+                        <span class="term">09:00 ~ 17:30</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="day_box active">
+                <div class="date"><span>2</span></div>
+                <div class="day_con">
+                    <div class="attend_ticket">
+                        <strong class="time">8시간</strong>
+                        <span class="term">09:00 ~ 18:00</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="day_box">
+                <div class="date"><span>3</span></div>
+                <div class="day_con">
+                    <div class="attend_ticket abnormal">
+                        <strong class="time">-</strong>
+                        <span class="term">09:00 ~ <span class="error">- : -</span></span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="day_box sat">
+                <div class="date"><span>4</span></div>
+                <div class="day_con"></div>
+            </a>
+        </div>
+        <div class="week">
+            <a href="#" class="day_box sun">
+                <div class="date"><span>5</span></div>
+                <div class="day_con"></div>
+            </a>
+            <a href="#" class="day_box">
+                <div class="date"><span>6</span></div>
+                <div class="day_con">
+                    <div class="attend_ticket">
+                        <strong class="time">8시간</strong>
+                        <span class="term">09:00 ~ 18:00</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="day_box">
+                <div class="date"><span>7</span></div>
+                <div class="day_con">
+                    <div class="attend_ticket">
+                        <strong class="time">8시간</strong>
+                        <span class="term">09:00 ~ 18:00</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="day_box">
+                <div class="date"><span>8</span></div>
+                <div class="day_con">
+                    <div class="attend_ticket">
+                        <strong class="time">8시간</strong>
+                        <span class="term">09:00 ~ 18:00</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="day_box">
+                <div class="date"><span>9</span></div>
+                <div class="day_con"></div>
+            </a>
+            <a href="#" class="day_box today">
+                <div class="date"><span>10</span></div>
+                <div class="day_con">
+                    <div class="attend_ticket yet">
+                        <strong class="time">-</strong>
+                        <span class="term">09:00 ~ - : -</span>
+                    </div>
+                </div>
+            </a>
+            <a href="#" class="day_box sat">
+                <div class="date"><span>11</span></div>
+                <div class="day_con">
+                </div>
+            </a>
+        </div>
+        <div class="week">
+            <a href="#" class="day_box sun">
+                <div class="date"><span>12</span></div>
+                <div class="day_con"></div>
+            </a>
+            <a href="#" class="day_box">
+                <div class="date"><span>13</span></div>
+                <div class="day_con">
+                    <ul class="label_list">
+                        <li><span class="label_time2 blue"><strong>휴가</strong>김희연 외 3명</span></li>
+                        <li><span class="label_time2 yellow"><strong>근태</strong>박주완 외 15명</span></li>
+                    </ul>
+                </div>
+            </a>
+            <a href="#" class="day_box">
+                <div class="date"><span>14</span></div>
+                <div class="day_con"></div>
+            </a>
+            <a href="#" class="day_box">
+                <div class="date"><span>15</span></div>
+                <div class="day_con"></div>
+            </a>
+            <a href="#" class="day_box">
+                <div class="date"><span>16</span></div>
+                <div class="day_con"></div>
+            </a>
+            <a href="#" class="day_box">
+                <div class="date"><span>17</span></div>
+                <div class="day_con"></div>
+            </a>
+            <a href="#" class="day_box sat">
+                <div class="date"><span>18</span></div>
+                <div class="day_con">
+                </div>
+            </a>
+        </div>
+        <div class="week">
+            <a href="#" class="day_box sun">
+                <div class="date"><span>19</span></div>
+                <div class="day_con"></div>
+            </a>
+            <a href="#" class="day_box">
+                <div class="date"><span>20</span></div>
+                <div class="day_con"></div>
+            </a>
+            <a href="#" class="day_box">
+                <div class="date"><span>21</span></div>
+                <div class="day_con"></div>
+            </a>
+            <a href="#" class="day_box">
+                <div class="date"><span>22</span></div>
+                <div class="day_con"></div>
+            </a>
+            <a href="#" class="day_box">
+                <div class="date"><span>23</span></div>
+                <div class="day_con"></div>
+            </a>
+            <a href="#" class="day_box">
+                <div class="date"><span>24</span></div>
+                <div class="day_con"></div>
+            </a>
+            <a href="#" class="day_box sat">
+                <div class="date"><span>25</span></div>
+                <div class="day_con">
+                </div>
+            </a>
+        </div>
+        <div class="week">
+            <a href="#" class="day_box sun">
+                <div class="date"><span>26</span></div>
+                <div class="day_con"></div>
+            </a>
+            <a href="#" class="day_box">
+                <div class="date"><span>27</span></div>
+                <div class="day_con"></div>
+            </a>
+            <a href="#" class="day_box">
+                <div class="date"><span>28</span></div>
+                <div class="day_con"></div>
+            </a>
+            <a href="#" class="day_box">
+                <div class="date"><span>29</span></div>
+                <div class="day_con"></div>
+            </a>
+            <a href="#" class="day_box">
+                <div class="date"><span>30</span></div>
+                <div class="day_con"></div>
+            </a>
+            <a href="#" class="day_box next_month">
+                <div class="date"><span>1</span></div>
+                <div class="day_con"></div>
+            </a>
+            <a href="#" class="day_box sat next_month">
+                <div class="date"><span>2</span></div>
+                <div class="day_con">
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
