@@ -204,6 +204,8 @@
   // pictGrid__item
   &__item {
     position: relative;
+    display: block;
+    height: 100%;
     border: 1px solid rgba(0, 0, 0, .05);
     background-color: #eee;
     background-repeat: no-repeat;
@@ -241,10 +243,23 @@
 
   &.ratio--43 {
     aspect-ratio: 4 / 3;
+    @supports not (aspect-ratio: 4 / 3) {
+      .pictGrid__item {
+        float: left;
+        padding-top: calc(3/4 * 100%);
+      }
+    }
   }
 
   &.ratio--34 {
     aspect-ratio: 3 / 4;
+    @supports not (aspect-ratio: 3 / 4) {
+      .pictGrid__item {
+        float: left;
+        padding-top: calc(4/3 * 100%);
+      }
+    }
+
     &.pictGrid--pic3 {
       .pictGrid__item:first-of-type {
         grid-row: 1 / 2;
