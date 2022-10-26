@@ -468,7 +468,7 @@ img{max-width:100%;height:auto}
 .pictGrid--pic3 .pictGrid__item:first-of-type{grid-row:1/3}
 .pictGrid--row3 .pictGrid__item:first-of-type{grid-column:1/3}
 .pictGrid__item{position:relative;display:block;border:1px solid rgba(0,0,0,.05);background-color:#eee;background-repeat:no-repeat;background-position:center center;background-size:cover}
-.pictGrid__item>img{width:100%;height:100%;object-fit:cover}
+.pictGrid__item>img{width:100%;min-height: 100%;height:100%;object-fit:cover}
 .pictGrid__item--more{position:absolute;top:0;bottom:0;left:0;right:0;background-color:rgba(0,0,0,.5);font-size:22px;font-weight:900;color:#fff;display:flex;justify-content:center;align-items:center}
 .pictGrid__item--video::before{content:'';position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:40px;height:40px;background:url(/svc/wfm/img/sp_wfm.png) 0 -67px no-repeat;background-size:500px 500px}
 @supports not (aspect-ratio:4/3){
