@@ -197,6 +197,9 @@
 
   // pictGrid--row3
   &--row3 {
+    .pictGrid__item {
+      height: 50vw;
+    }
     .pictGrid__item:first-of-type {
       grid-column: 1 / 3;
     }
