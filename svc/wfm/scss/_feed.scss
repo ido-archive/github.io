@@ -186,6 +186,7 @@
   display: grid;
   grid-gap: 2px;
   aspect-ratio: 1 / 1;
+  height: 100vw;
 
   // pictGrid--pic3
   &--pic3 {
@@ -245,6 +246,7 @@
 
   &.ratio--43 {
     aspect-ratio: 4 / 3;
+    height: 75vw;
     @supports not (aspect-ratio: 4 / 3) {
       .pictGrid__item {
         float: left;
@@ -255,6 +257,7 @@
 
   &.ratio--34 {
     aspect-ratio: 3 / 4;
+    height: 133vw;
     @supports not (aspect-ratio: 3 / 4) {
       .pictGrid__item {
         float: left;
