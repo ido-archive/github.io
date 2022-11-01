@@ -222,7 +222,6 @@
       &::before {
         content: '';
         @include absolSp(16px, 12px, -65px, -104px);
-        margin-top: -5px;
       }
     }
 
@@ -233,7 +232,6 @@
       &::before {
         content: '';
         @include absolSp(16px, 12px, -85px, -104px);
-        margin-top: -5px;
       }
     }
 
