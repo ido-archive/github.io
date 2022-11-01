@@ -59,8 +59,8 @@ $flexMap: ( // key : value
   position: absolute;
   top: 50%;
   left: 50%;
-  margin-top: -($spHeight/2);
-  margin-left: -($spWidth/2);
+  margin-top: round(-($spHeight/2));
+  margin-left: round(-($spWidth/2));
   width: $spWidth;
   height: $spHeight;
   background: url($url) $posX $posY no-repeat;
