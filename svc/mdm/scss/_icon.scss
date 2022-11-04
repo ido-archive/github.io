@@ -326,5 +326,15 @@
         @include absolSp(11px, 10px, -34px, -111px);
       }
     }
+
+    // icon--close
+    &--close {
+      width: 32px;
+      height: 32px;
+      &::before {
+        content: '';
+        @include absolSp(10px, 10px, -19px, -111px);
+      }
+    }
   }
 }
