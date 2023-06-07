@@ -19,7 +19,7 @@
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
   },
-  "homepage": "https://ido-archive.github.io/react-test/",
+  "homepage": "https://ido-archive.github.io/svc/todolist/build/index.html",
   "eslintConfig": {
     "extends": [
       "react-app",
